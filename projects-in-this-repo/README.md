@@ -8,5 +8,5 @@ Please note: Many of our initiatives are add-ons to other groups' projects, so o
 + [SF's budget allocations/visualization: Measuring social impact >>](https://github.com/RocioSNg/SF_brigade_impact_gov)
 + [Interactive visualization of SF's building emissions and energy use >>](#)
 + [MarbleTree: Geo-aggregating mental health resource data >>](#)
-+ [Exploratory analyses upon 311 call data >>](#)
++ [Exploratory analyses upon 311 call data >>](311_Exploratory-Analyses)
 + [Adopt-a-Drain: Predicting flooded drains (per drain, zip, and/or day) >>](#)
