@@ -4,14 +4,18 @@ library(gridExtra)
 library(scales)
 library(dplyr)
 
-## Load data and add some value to NA neighborhoods.
+## Load data and do some cleaning.
 cases_sample <- na.omit(read.csv("data/cases_sample.csv"))
 levels(cases_sample$Neighborhood)[levels(cases_sample$Neighborhood)==""] <- "NOT DEFINED"
 
 ## Convert Opened and Closed days + times to usable format.
 cases_sample$Opened <- as.POSIXct(strptime(cases_sample$Opened, format = "%m/%d/%Y %I:%M:%S %p"), tz = "America/Los_Angeles")
 cases_sample$Closed <- as.POSIXct(strptime(cases_sample$Closed, format = "%m/%d/%Y %I:%M:%S %p"), tz = "America/Los_Angeles")
+
+## Create 'Resolve time' from difference between Open and Close times.
 cases_sample$Resolve.Time <- round(difftime(cases_sample$Closed, cases_sample$Opened, units = "hours"), 2)
+cases_sample$Resolve.Time <- as.numeric(cases_sample$Resolve.Time)
+is.na(cases_sample$Resolve.Time) <- 0
 
 ## Preview data
 print(head(cases_sample))
@@ -64,13 +68,26 @@ reqst <- data.frame(table(neightype$Request.Type))
 reqst <- reqst[order(-reqst$Freq),]
 neightype <- neightype[neightype$Request.Type %in% reqst$Var1[1:10],]
 
-## Flipped bar chart.
+## Panel bar chart.
 typebar <- ggplot(neightype, aes(Request.Type, fill = Request.Type)) + facet_wrap(~Neighborhood)
 typebar <- typebar + geom_bar(stat = "bin", position = "stack") + xlab("") + ylab("")
 typebar <- typebar + ggtitle("Request Types Per Top 5 Neighborhood")
 typebar <- typebar + theme(axis.text.x = element_blank())
 
 print(typebar)
+
+## Total demand by type.
+## Use only the top 5.
+req311 <- data.frame(table(cases_sample$Request.Type))
+req311 <- req311[order(-req311$Freq),]
+req311$Var1 <- reorder(req311$Var1, req311$Freq)
+
+## Flipped bar chart.
+req311bar <- ggplot(req311[1:10,], aes(x = Var1, y = Freq, fill = Freq))
+req311bar <- req311bar + geom_bar(stat = "identity") + ggtitle("Request Types by Overall Demand")
+req311bar <- req311bar + coord_flip() + theme(legend.position = "none")
+
+print(req311bar)
 
 ######### Response Times Exploration: Very Rough ##########
 
@@ -109,11 +126,22 @@ print(meanres_req[1:10,])
 #### Let's compare mean response times, per neighborhood + request type...
 
 ## Beginning w/street cleaning.
-meanres_street <- meanres[meanres_nereq$Request.Type == "Street_Cleaning",]
+meanres_street <- meanres_nereq[meanres_nereq$Request.Type == "Street_Cleaning",]
 meanres_street <- meanres_street[order(-meanres_street$Mean.Resolve),]
 print(meanres_street[1:10,])
 
 ## Let's do the same for sidewalk cleaning.
-meanres_side <- meanres[meanres_nereq$Request.Type == "Sidewalk_Cleaning",]
+meanres_side <- meanres_nereq[meanres_nereq$Request.Type == "Sidewalk_Cleaning",]
 meanres_side <- meanres_side[order(-meanres_side$Mean.Resolve),]
 print(meanres_side[1:10,])
+
+## Some pretty panel plotting by req. type per top 5 most requesting neighborhoods.
+top5neigh <- neigh311$Var1[1:5]
+top5reqs <- req311$Var1[1:5]
+meanres_req_p <- meanres_nereq[(meanres_nereq$Neighborhood %in% top5neigh)
+                               & (meanres_nereq$Request.Type %in% top5reqs),]
+# meanres_req_p$Mean.Resolve <- as.numeric(meanres_req_p$Mean.Resolve)
+# is.na(meanres_req_p$Mean.Resolve) <- 0
+meanres_plot <- ggplot(meanres_req_p, aes(x=Request.Type, y=as.numeric(Mean.Resolve)))
+meanres_plot <- meanres_plot + geom_bar(stat = "identity") + facet_wrap(~Request.Type)
+print(meanres_plot)
