@@ -5,10 +5,13 @@
 [SF OpenData](https://data.sfgov.org/) provides a real-time record and API for [311 cases completed and in progress](https://data.sfgov.org/City-Infrastructure/Case-Data-from-San-Francisco-311-SF311-/vw6y-z8j6). The Data Science Working Group at Code for San Francisco looks to perform exploratory statistical analyses on this data to find whether there are any strategically and/or politically interesting characteristics of San Francisco's public agencies and/or the publics they serve.  
 
 **Responsible DSWG Teammates**
++ [Matthew Pancia](http://bit.ly/1PFuA8k)
++ [Elena Palesis](http://bit.ly/1mgjXl4)
++ [Yiwen Yu](http://bit.ly/1mgkqDE)
++ [Jude Calvillo](http://linkd.in/1BGeytb)
 + [Catherine Zhang](http://bit.ly/1WXteM8)
 + [Rocio Ng](http://bit.ly/1WXtj2v)
 + [Abhiram Chintangal](http://bit.ly/1WXtpHr)
-+ [Jude Calvillo](http://linkd.in/1BGeytb)
 
 ### Tests to be Performed
 These have yet to be determined, but some analyses we're currently considering include:
