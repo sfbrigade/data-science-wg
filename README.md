@@ -14,7 +14,7 @@ In pursuing the above, we humbly hope that CfSF's dedicated project groups come 
 
 Team Leads: [Jude Calvillo](http://linkd.in/1BGeytb) and [Sanat Moningi](http://bit.ly/1PFurlp)  
 Lead Data Scientist: [Matthew Pancia](http://bit.ly/1PFuA8k)  
-Wiki (resources): [DSWG Wiki >>](wiki)  
+Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wiki)  
 
 ### Current Initiatives
 
