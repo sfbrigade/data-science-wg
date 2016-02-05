@@ -9,8 +9,9 @@ If/when successful, the resulting model will likely be integrated into CfSF's la
 ### Responsible DSWG Teammates
 
 + [Matthew Pancia](http://bit.ly/1PFuA8k)
-+ [Elena Palesis](http://bit.ly/1mgjXl4)
 + [Jude Calvillo](http://linkd.in/1BGeytb)
++ [Elena Palesis](http://bit.ly/1mgjXl4)
++ [Kasia Rachuta](http://bit.ly/1URzpQs)
 
 ### Status: As of Feb. 5, 2016
 
