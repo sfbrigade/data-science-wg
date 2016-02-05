@@ -9,6 +9,7 @@
 + [Elena Palesis](http://bit.ly/1mgjXl4)
 + [Yiwen Yu](http://bit.ly/1mgkqDE)
 + [Jude Calvillo](http://linkd.in/1BGeytb)
++ [Jeff Lam](http://bit.ly/1Pm9SLJ)
 + [Catherine Zhang](http://bit.ly/1WXteM8)
 + [Rocio Ng](http://bit.ly/1WXtj2v)
 + [Abhiram Chintangal](http://bit.ly/1WXtpHr)
