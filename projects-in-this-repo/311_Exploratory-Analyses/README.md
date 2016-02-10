@@ -40,64 +40,65 @@ We'll be adding plots shortly. These are just some summaries to inspire the DSWG
 #### Top 10 Request Types...
 **--- By Shortest Mean Resolution Time (across all neighborhoods) ---**
 
-|Request.Type                                                      | Mean.Resolve|
-|:-----------------------------------------------------------------|------------:|
-|Human/Animal Waste                                                |         0.17|
-|puc - water - complaint                                           |         0.20|
-|rpd - neighborhood_services - compliment                          |         0.29|
-|aging_adult_services - aging_adult_services - request_for_service |         0.33|
-|Sign - Incorrect_Signage                                          |         0.66|
-|Graffiti_Watch                                                    |         0.68|
-|dpw - bses - other                                                |         0.92|
-|Building - Kitchen_Community                                      |         1.14|
-|Trees - Property_damage                                           |         1.22|
-|Building - Plumbing_Broken_leaking                                |         1.36|
+|Request.Type                                             | Mean.Resolve|
+|:--------------------------------------------------------|------------:|
+|Sign Repair - Loose                                      |         0.03|
+|mta - residential_parking_permit - request_for_service   |         0.04|
+|tt_collector - tt_collector - mailing_request            |         0.23|
+|county_clerk - county_clerk - request_for_service        |         0.51|
+|puc - water - customer_callback                          |         0.79|
+|mta - bicycle - request_for_service                      |         1.20|
+|Construction Zone Tow-away Permits for Proven Managment  |         1.68|
+|Litter_Receptacle_Request_New_Removal                    |         1.69|
+|homeless_concerns - homeless_other - request_for_service |         2.06|
+|puc - water - request_for_service                        |         2.12|
 
 **--- By Longest Mean Resolution Time (across all neighborhoods) ---**
 
-|Request.Type                                           | Mean.Resolve|
-|:------------------------------------------------------|------------:|
-|Out_of_Town_Cab Picking_Up_Passengers                  |     31919.08|
-|Unpermitted_Cab Picking_Up_Passengers                  |     24080.41|
-|Streetlight - Pole_Cover_Missing                       |     20831.69|
-|dpw - buf - followup_request                           |     16581.42|
-|dpw - buf - other                                      |     13992.27|
-|Sign - Painted_Over                                    |     10523.53|
-|Streetlight - Light_Glass_Cover_Missing                |      8720.79|
-|Sign Repair - Not_Visible                              |      8537.12|
-|Temporary Sign Request for City_Sponsored_Celebrations |      7801.99|
-|Streetlight - Pole_Leaning                             |      7723.58|
+|Request.Type                                | Mean.Resolve|
+|:-------------------------------------------|------------:|
+|dpw - bsm - followup_request                |     27208.90|
+|Public_Stairway_Defect                      |     25823.03|
+|Streetlight - Other_Request_New_Streetlight |     18549.16|
+|Utility Lines/Wires                         |     17381.97|
+|rpd - rpd_other - request_for_service       |     11650.02|
+|SFHA Priority - Preventive                  |     10512.38|
+|sfpd - sfpd - request_for_service           |     10336.51|
+|puc - puco - complaint                      |      8905.67|
+|dtis - dtis - request_for_service           |      8573.08|
+|Streetlight - Other_Request_Light_Shield    |      6312.14|
 
 #### Top 10 Neighborhoods...
 **--- By Shortest Mean Resolution Time (across all request types) ---**
 
-|Neighborhood             | Mean.Resolve|
-|:------------------------|------------:|
-|Yerba Buena Island       |        22.16|
-|University Mound         |        45.75|
-|Anza Vista               |        48.43|
-|Silver Terrace           |        76.21|
-|Midtown Terrace          |        85.63|
-|Dogpatch                 |        89.19|
-|St. Francis Wood         |        95.29|
-|Produce Market           |       107.61|
-|Aquatic Park / Ft. Mason |       148.78|
-|Westwood Park            |       161.75|
+|Neighborhood          | Mean.Resolve|
+|:---------------------|------------:|
+|McLaren Park          |         2.82|
+|Candlestick Point SRA |         6.30|
+|Parkmerced            |        12.40|
+|Merced Manor          |        15.88|
+|Sherwood Forest       |        24.13|
+|Peralta Heights       |        47.58|
+|Alamo Square          |        47.78|
+|Little Hollywood      |        48.76|
+|Lake Street           |        55.12|
+|Balboa Terrace        |        78.03|
 
 **--- By Longest Mean Resolution Time (across all request types) ---**
 
 |Neighborhood        | Mean.Resolve|
 |:-------------------|------------:|
-|Ingleside Terraces  |      4374.01|
-|Little Hollywood    |      2773.60|
-|Northern Waterfront |      1844.63|
-|Cow Hollow          |      1748.35|
-|Monterey Heights    |      1402.66|
-|Peralta Heights     |      1339.80|
-|Balboa Terrace      |      1329.78|
-|Treasure Island     |      1177.88|
-|Holly Park          |       940.50|
-|Miraloma Park       |       807.97|
+|Holly Park          |      2540.00|
+|Cole Valley         |      2435.79|
+|Cayuga              |      2343.87|
+|Anza Vista          |      1736.16|
+|Presidio Terrace    |      1541.12|
+|Cow Hollow          |      1462.26|
+|Glen Park           |      1394.10|
+|West of Twin Peaks  |       948.83|
+|Northern Waterfront |       887.75|
+|Castro/Upper Market |       875.78|
+
 
 
 

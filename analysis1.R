@@ -1,3 +1,0 @@
-## Load libraries.
-library(RSocrata)
-

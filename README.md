@@ -14,7 +14,7 @@ In pursuing the above, we humbly hope that CfSF's dedicated project groups come 
 
 Team Leads: [Jude Calvillo](http://linkd.in/1BGeytb) and [Sanat Moningi](http://bit.ly/1PFurlp)  
 Lead Data Scientist: [Matthew Pancia](http://bit.ly/1PFuA8k)  
-Wiki (resources): [DSWG Wiki >>](https://github.com/judecalvillo/Data-Science_Working-Group/wiki)  
+Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wiki)  
 
 ### Current Initiatives
 
@@ -23,8 +23,7 @@ The DSWG's initiatives are centered on building data science components for CfSF
 + [ParkSafe GIS coordinate realignment (w/street paths) >>](#)
 + [SF's budget allocations/visualization: Measuring social impact >>](https://github.com/RocioSNg/SF_brigade_impact_gov)
 + [Interactive visualization of SF's building emissions and energy use >>](#)
-+ [MarbleTree: Geo-aggregating mental health resource data >>](#)
-+ [Exploratory analyses upon 311 call data >>](projects-in-this-repo/311_Exploratory-Analyses)
-+ [Adopt-a-Drain: Predicting flooded drains (per drain, zip, and/or day) >>](#)
++ [MarbleTree: Geo-aggregating mental health resource data >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Marble-Tree_Mental-Health)
++ [Exploratory analyses upon 311 call data >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/311_Exploratory-Analyses)
++ [Adopt-a-Drain: Predicting flooded drains (per drain, zip, and/or day) >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Drain-Flooding_Prediction)
 
-*More to come! (markdown in progress)
