@@ -5,10 +5,14 @@
 [SF OpenData](https://data.sfgov.org/) provides a real-time record and API for [311 cases completed and in progress](https://data.sfgov.org/City-Infrastructure/Case-Data-from-San-Francisco-311-SF311-/vw6y-z8j6). The Data Science Working Group at Code for San Francisco looks to perform exploratory statistical analyses on this data to find whether there are any strategically and/or politically interesting characteristics of San Francisco's public agencies and/or the publics they serve.  
 
 **Responsible DSWG Teammates**
++ [Matthew Pancia](http://bit.ly/1PFuA8k)
++ [Elena Palesis](http://bit.ly/1mgjXl4)
++ [Yiwen Yu](http://bit.ly/1mgkqDE)
++ [Jude Calvillo](http://linkd.in/1BGeytb)
++ [Jeff Lam](http://bit.ly/1Pm9SLJ)
 + [Catherine Zhang](http://bit.ly/1WXteM8)
 + [Rocio Ng](http://bit.ly/1WXtj2v)
 + [Abhiram Chintangal](http://bit.ly/1WXtpHr)
-+ [Jude Calvillo](http://linkd.in/1BGeytb)
 
 ### Tests to be Performed
 These have yet to be determined, but some analyses we're currently considering include:
@@ -28,7 +32,7 @@ Just some basic descriptive stats and plots until the team begins its real stati
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
-### Resolution Time Explorations
+### Resolution Time Explorations (in Hours)
 We'll be adding plots shortly. These are just some summaries to inspire the DSWG's more advanced/inferential statistics.
 
 
@@ -36,95 +40,68 @@ We'll be adding plots shortly. These are just some summaries to inspire the DSWG
 #### Top 10 Request Types...
 **--- By Shortest Mean Resolution Time (across all neighborhoods) ---**
 
-|Request.Type                                             |Mean.Resolve |
-|:--------------------------------------------------------|:------------|
-|Sign Repair - Loose                                      |0.03 hours   |
-|mta - residential_parking_permit - request_for_service   |0.04 hours   |
-|tt_collector - tt_collector - mailing_request            |0.23 hours   |
-|county_clerk - county_clerk - request_for_service        |0.51 hours   |
-|puc - water - customer_callback                          |0.79 hours   |
-|mta - bicycle - request_for_service                      |1.20 hours   |
-|Construction Zone Tow-away Permits for Proven Managment  |1.68 hours   |
-|Litter_Receptacle_Request_New_Removal                    |1.69 hours   |
-|homeless_concerns - homeless_other - request_for_service |2.06 hours   |
-|puc - water - request_for_service                        |2.12 hours   |
+|Request.Type                                                      | Mean.Resolve|
+|:-----------------------------------------------------------------|------------:|
+|Human/Animal Waste                                                |         0.17|
+|puc - water - complaint                                           |         0.20|
+|rpd - neighborhood_services - compliment                          |         0.29|
+|aging_adult_services - aging_adult_services - request_for_service |         0.33|
+|Sign - Incorrect_Signage                                          |         0.66|
+|Graffiti_Watch                                                    |         0.68|
+|dpw - bses - other                                                |         0.92|
+|Building - Kitchen_Community                                      |         1.14|
+|Trees - Property_damage                                           |         1.22|
+|Building - Plumbing_Broken_leaking                                |         1.36|
 
 **--- By Longest Mean Resolution Time (across all neighborhoods) ---**
 
-|Request.Type                                |Mean.Resolve   |
-|:-------------------------------------------|:--------------|
-|dpw - bsm - followup_request                |27208.90 hours |
-|Public_Stairway_Defect                      |25823.03 hours |
-|Streetlight - Other_Request_New_Streetlight |18549.16 hours |
-|Utility Lines/Wires                         |17381.97 hours |
-|rpd - rpd_other - request_for_service       |11650.02 hours |
-|SFHA Priority - Preventive                  |10512.38 hours |
-|sfpd - sfpd - request_for_service           |10336.51 hours |
-|puc - puco - complaint                      |8905.67 hours  |
-|dtis - dtis - request_for_service           |8573.08 hours  |
-|Streetlight - Other_Request_Light_Shield    |6312.14 hours  |
+|Request.Type                                           | Mean.Resolve|
+|:------------------------------------------------------|------------:|
+|Out_of_Town_Cab Picking_Up_Passengers                  |     31919.08|
+|Unpermitted_Cab Picking_Up_Passengers                  |     24080.41|
+|Streetlight - Pole_Cover_Missing                       |     20831.69|
+|dpw - buf - followup_request                           |     16581.42|
+|dpw - buf - other                                      |     13992.27|
+|Sign - Painted_Over                                    |     10523.53|
+|Streetlight - Light_Glass_Cover_Missing                |      8720.79|
+|Sign Repair - Not_Visible                              |      8537.12|
+|Temporary Sign Request for City_Sponsored_Celebrations |      7801.99|
+|Streetlight - Pole_Leaning                             |      7723.58|
 
 #### Top 10 Neighborhoods...
 **--- By Shortest Mean Resolution Time (across all request types) ---**
 
-|Neighborhood          |Mean.Resolve |
-|:---------------------|:------------|
-|McLaren Park          |2.82 hours   |
-|Candlestick Point SRA |6.30 hours   |
-|Parkmerced            |12.40 hours  |
-|Merced Manor          |15.88 hours  |
-|Sherwood Forest       |24.13 hours  |
-|Peralta Heights       |47.58 hours  |
-|Alamo Square          |47.78 hours  |
-|Little Hollywood      |48.76 hours  |
-|Lake Street           |55.12 hours  |
-|Balboa Terrace        |78.03 hours  |
+|Neighborhood             | Mean.Resolve|
+|:------------------------|------------:|
+|Yerba Buena Island       |        22.16|
+|University Mound         |        45.75|
+|Anza Vista               |        48.43|
+|Silver Terrace           |        76.21|
+|Midtown Terrace          |        85.63|
+|Dogpatch                 |        89.19|
+|St. Francis Wood         |        95.29|
+|Produce Market           |       107.61|
+|Aquatic Park / Ft. Mason |       148.78|
+|Westwood Park            |       161.75|
 
 **--- By Longest Mean Resolution Time (across all request types) ---**
 
-|Neighborhood        |Mean.Resolve  |
-|:-------------------|:-------------|
-|Holly Park          |2540.00 hours |
-|Cole Valley         |2435.79 hours |
-|Cayuga              |2343.87 hours |
-|Anza Vista          |1736.16 hours |
-|Presidio Terrace    |1541.12 hours |
-|Cow Hollow          |1462.26 hours |
-|Glen Park           |1394.10 hours |
-|West of Twin Peaks  |948.83 hours  |
-|Northern Waterfront |887.75 hours  |
-|Castro/Upper Market |875.78 hours  |
+|Neighborhood        | Mean.Resolve|
+|:-------------------|------------:|
+|Ingleside Terraces  |      4374.01|
+|Little Hollywood    |      2773.60|
+|Northern Waterfront |      1844.63|
+|Cow Hollow          |      1748.35|
+|Monterey Heights    |      1402.66|
+|Peralta Heights     |      1339.80|
+|Balboa Terrace      |      1329.78|
+|Treasure Island     |      1177.88|
+|Holly Park          |       940.50|
+|Miraloma Park       |       807.97|
 
-#### Top 10 Neighborhoods, by Longest Mean Resolution Time for Selected Request Types
-**--- For Street Cleaning ---**
 
-|Neighborhood        |Mean.Resolve  |
-|:-------------------|:-------------|
-|Inner Sunset        |1147.13 hours |
-|Castro/Upper Market |900.10 hours  |
-|West of Twin Peaks  |305.28 hours  |
-|Seacliff            |264.89 hours  |
-|Bayview             |161.79 hours  |
-|Excelsior           |99.47 hours   |
-|Outer Richmond      |96.05 hours   |
-|Outer Sunset        |81.76 hours   |
-|North Beach         |79.34 hours   |
-|Chinatown           |69.72 hours   |
 
-**--- For Sidewalk Cleaning ---**
 
-|Neighborhood          |Mean.Resolve |
-|:---------------------|:------------|
-|Downtown/Civic Center |305.20 hours |
-|Potrero Hill          |274.37 hours |
-|Haight Ashbury        |264.27 hours |
-|South of Market       |237.16 hours |
-|Pacific Heights       |205.75 hours |
-|Outer Richmond        |202.23 hours |
-|Parkside              |197.74 hours |
-|Russian Hill          |196.18 hours |
-|Outer Mission         |155.57 hours |
-|North Beach           |154.73 hours |
 
 
 

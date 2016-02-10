@@ -16,6 +16,7 @@ cases_sample$Resolve.Time <- round(difftime(cases_sample$Closed, cases_sample$Op
 ## Preview data
 print(head(cases_sample))
 
+
 ##### Some quickie plots: 311 request sources #####
 
 ## Begin w/Freq. table
