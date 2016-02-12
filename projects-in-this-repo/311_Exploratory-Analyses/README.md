@@ -2,7 +2,7 @@
 
 ## 311 Case Data: Exploratory Analyses
 
-[SF OpenData](https://data.sfgov.org/) provides a real-time record and API for [311 cases completed and in progress](https://data.sfgov.org/City-Infrastructure/Case-Data-from-San-Francisco-311-SF311-/vw6y-z8j6). The Data Science Working Group at Code for San Francisco looks to perform exploratory statistical analyses on this data to find whether there are any strategically and/or politically interesting characteristics of San Francisco's public agencies and/or the publics they serve.  
+[SF OpenData](https://data.sfgov.org/) provides a real-time record and API for [311 cases completed and in progress](https://data.sfgov.org/City-Infrastructure/Case-Data-from-San-Francisco-311-SF311-/vw6y-z8j6). The Data Science Working Group at Code for San Francisco looks to perform exploratory statistical analyses on this data to see whether it might posses strategically and/or politically interesting characteristics, which we will later confirm -via inferential statistics- and report to relevant stakeholders (e.g. San Francisco's public agencies and/or the publics they serve).  
 
 **Responsible DSWG Teammates**
 + [Matthew Pancia](http://bit.ly/1PFuA8k)
@@ -10,30 +10,44 @@
 + [Yiwen Yu](http://bit.ly/1mgkqDE)
 + [Jude Calvillo](http://linkd.in/1BGeytb)
 + [Jeff Lam](http://bit.ly/1Pm9SLJ)
-+ [Catherine Zhang](http://bit.ly/1WXteM8)
-+ [Rocio Ng](http://bit.ly/1WXtj2v)
-+ [Abhiram Chintangal](http://bit.ly/1WXtpHr)
++ [Matthew Mollison](http://bit.ly/1PPZXSa)
+
+### Current Status: Feb. 11, 2016
+
+Our sample dataset now includes zips and census blocks, per case, in preparation for joining with Census data and running our statistical analyses. To that end, we've now settled on the tests we'd like to perform, some of which span 311 case and Census data, along with some interesting cluster visualizations we wish to produce via 'bigger' data methods.  
+
+We'll be dividing up and executing the above over the next week and expect to share some of our findings + visualizations at [Code for America's upcoing CodeAcross in San Francisco (March 5, 2016)](https://www.codeforamerica.org/events/codeacross-2016/).  
+
+*Please note: This directory's name may soon change, as we're now moving beyond exploratory analyses.*  
 
 ### Tests to be Performed
-These have yet to be determined, but some analyses we're currently considering include:
 
-+ Looking for statistically significant differences in...
-    - Resolution times by agency (overall and per request type)
-    - Resolution times by neighborhood served (overall and per request type)
-    - Resolution times by Supervisor/District (overall and per request type)
-    - Request types per neighborhood
-+ Correlations between...
-    - Resolution times and call frequency
+The tests we're currently tackling include:
+
++ Income correlates / significant diffs?
++ Resolution time (by agency, overall, neighborhood, income, etc)?
++ Neighborhoods per request type?
++ Ethnic correlates / significant diffs?
++ Significant diffs in request types by source?
++ Seasonality to request types?
++ Interaction between call frequency and resolution time, per request type and/or per responsible agency?  
     
 ### Quickies
-Just some basic descriptive stats and plots until the team begins its real statistical analyses. *Please note, all of the below draw from a 5,000 record sample*:
+These are just some early descriptive plots, until the team begins systematically tackling the statistical analyses mentioned above.   
+
+*Please note, all of the below draw from a 5,000 record sample*:
 
 ![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png) ![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-2.png) 
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
-### Resolution Time Explorations (in Hours)
-We'll be adding plots shortly. These are just some summaries to inspire the DSWG's more advanced/inferential statistics.
+### Similarity of Request Type Distributions (K-L Divergence)
+The graph below, produced by Matt Pancia, clusters neighborhoods according to the similarity of their request type distributions, as reflected by their [Kullback–Leibler divergence/weight](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence).  
+
+![](figure/kl_divergence_graph.png)
+
+### Resolution Time Exploration (in Hours)
+We'll be adding plots later. These are just some summaries to inspire the DSWG's more advanced/inferential statistics.
 
 
 
@@ -98,7 +112,6 @@ We'll be adding plots shortly. These are just some summaries to inspire the DSWG
 |West of Twin Peaks  |       948.83|
 |Northern Waterfront |       887.75|
 |Castro/Upper Market |       875.78|
-
 
 
 

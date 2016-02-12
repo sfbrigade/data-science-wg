@@ -20,7 +20,7 @@ Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wi
 
 The DSWG's initiatives are centered on building data science components for CfSF's project groups. We do, however, also pursue exploratory analyses that could inspire dedicated projects at CfSF, as well as develop standalone visualization tools.
 
-+ [ParkSafe GIS coordinate realignment (w/street paths) >>](#)
++ [ParkSafe GIS coordinate realignment (w/street paths) >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Park-Safe_GIS-Solution)
 + [SF's budget allocations/visualization: Measuring social impact >>](https://github.com/RocioSNg/SF_brigade_impact_gov)
 + [Interactive visualization of SF's building emissions and energy use >>](#)
 + [MarbleTree: Geo-aggregating mental health resource data >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Marble-Tree_Mental-Health)
