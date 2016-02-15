@@ -44,7 +44,12 @@ These are just some early descriptive plots, until the team begins systematicall
 ### Similarity of Request Type Distributions (K-L Divergence)
 The graph below, produced by Matt Pancia, clusters neighborhoods according to the similarity of their request type distributions, as reflected by their [Kullback–Leibler divergence/weight](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence).  
 
-![](figure/kl_divergence_graph.png)
+![](figure/kl_divergence_graph.png)  
+
+### Time-Lapse Heatmap of 311 Requests for Sidewalk and Street Cleaning
+The heatmap linked to below geographically reflects the number of 311 requests for sidewalk and street cleaning over time. It was produced by Jeffrey Lam and will help inform our impending investigations over seasonality to request types.
+
+[![](figure/cartodb_heatmap_sf-311-calls.jpg)](http://bit.ly/1WnReqW)  
 
 ### Resolution Time Exploration (in Hours)
 We'll be adding plots later. These are just some summaries to inspire the DSWG's more advanced/inferential statistics.
@@ -59,13 +64,13 @@ We'll be adding plots later. These are just some summaries to inspire the DSWG's
 |Sign Repair - Loose                                      |         0.03|
 |mta - residential_parking_permit - request_for_service   |         0.04|
 |tt_collector - tt_collector - mailing_request            |         0.23|
-|county_clerk - county_clerk - request_for_service        |         0.51|
 |puc - water - customer_callback                          |         0.79|
 |mta - bicycle - request_for_service                      |         1.20|
-|Construction Zone Tow-away Permits for Proven Managment  |         1.68|
 |Litter_Receptacle_Request_New_Removal                    |         1.69|
 |homeless_concerns - homeless_other - request_for_service |         2.06|
 |puc - water - request_for_service                        |         2.12|
+|City_garbage_can_overflowing                             |         2.30|
+|Illegal Postings - Posting_Too_High_on_Pole              |         3.12|
 
 **--- By Longest Mean Resolution Time (across all neighborhoods) ---**
 
@@ -109,9 +114,9 @@ We'll be adding plots later. These are just some summaries to inspire the DSWG's
 |Presidio Terrace    |      1541.12|
 |Cow Hollow          |      1462.26|
 |Glen Park           |      1394.10|
-|West of Twin Peaks  |       948.83|
+|West of Twin Peaks  |       924.89|
 |Northern Waterfront |       887.75|
-|Castro/Upper Market |       875.78|
+|Castro/Upper Market |       864.53|
 
 
 
