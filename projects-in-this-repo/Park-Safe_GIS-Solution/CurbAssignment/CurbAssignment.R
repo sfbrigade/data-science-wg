@@ -3,6 +3,22 @@ library(dplyr)
 library(sp)
 library(geosphere)
 library(rgdal)
+library(doParallel)
+cl <- makeCluster(4)
+registerDoParallel(cl)
+if(!dir.exists(paste0(getwd(), "/stclines_streets"))){
+  featurl <- "https://data.sfgov.org/download/wbm8-ratb/ZIP"
+  tf <- tempfile()
+  download.file(featurl, tf)
+  unzip(tf, exdir =  "./stclines_streets")
+}
+if(!dir.exists(paste0(getwd(), "/cityfeatures"))){
+  stlurl <- "https://data.sfgov.org/download/nvxg-zay4/ZIP"
+  tf <- tempfile()
+  download.file(stlurl, tf)
+  unzip(tf, exdir = "./cityfeatures")
+}
+
 feats <- rgdal::readOGR('cityfeatures', 'cityfeatures')
 streets <- rgdal::readOGR('stclines_streets', 'stclines_streets')
 
@@ -36,10 +52,10 @@ getDF <- function(row){
   linelist
 }
 
-t <- list()
-for(i in 1:10){
-  t[[i]] <- getDF(feats[i,])
+t <- foreach(i = 1:100, .packages = c("sp", "rgeos", "geosphere", "rgdal", "dplyr") ) %dopar% {
+  list(getDF(feats[i,]))
 }
+
 t <- unlist(t)
 t <- sapply(1:length(t), function(x) spChFIDs(t[[x]], as.character(x)))
 df <- do.call(rbind, t)
