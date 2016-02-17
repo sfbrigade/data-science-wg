@@ -16,7 +16,7 @@ colnames(race_est) <- colnames(race_est) %>%
         gsub('Estimate; ','', .) %>%
         gsub('Black or African American','Black', .) %>%
         gsub('American Indian and Alaska Native','Native', . ) %>%
-        gsub('Native Hawaiian and Other Pacific Islander','Pacific Islander', . ) %>%
+        gsub('Native Hawaiian and Other Pacific Islander','Pacific.Islander', . ) %>%
         gsub('Asian alone', 'Asian',  . ) %>%
         gsub('Some other race','Other', . ) %>%
         gsub('All other two race combinations', 'Other_Combination', . ) %>%
@@ -31,8 +31,12 @@ colnames(race_est) <- colnames(race_est) %>%
         
         gsub(' - ', '', . )
 
+race_tots <- tbl_df(race_est[c('C.Block','1:','2:','3:','4+:')])
+race_est <- race_est[!names(race_est) %in% c('1:','2:','2+:','3:','4+:')]
+race_est[,-1] <- apply(race_est, 1, function(x) as.numeric(x))
 
-pop_df <- tbl_df(read.csv('data/sf_census-profile.csv'))
 
 df <- race_est %>% gather(key, population, -C.Block, -Total) %>%
-        separate(key, into=c('number.races', 'race'), sep=':')
+        separate(key, into=c('number.races', 'race'), sep=':') %>%
+        mutate(percent.pop = population / Total)
+
