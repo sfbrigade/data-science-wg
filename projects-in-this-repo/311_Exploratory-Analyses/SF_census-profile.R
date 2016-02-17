@@ -31,7 +31,7 @@ cblock_profile <- cbind(pop_est, inc_est[-1], agesex_est[-1])
 colnames(cblock_profile)[1] <- "C.Block"
 
 ## Some final cleaning: Coerce all fields to numeric and coerce matrix back to DF.
-cblock_profile <- sapply(cblock_profile, function(x) as.numeric(as.character(x)))
+cblock_profile[,-1] <- sapply(cblock_profile[,-1], function(x) as.numeric(as.character(x)))
 cblock_profile <- as.data.frame(cblock_profile)
 
 ## Preview
