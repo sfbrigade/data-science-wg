@@ -31,12 +31,16 @@ colnames(race_est) <- colnames(race_est) %>%
         
         gsub(' - ', '', . )
 
-race_tots <- tbl_df(race_est[c('C.Block','1:','2:','3:','4+:')])
-race_est <- race_est[!names(race_est) %in% c('1:','2:','2+:','3:','4+:')]
-race_est[,-1] <- apply(race_est, 1, function(x) as.numeric(x))
+
+# race_tots <- tbl_df(race_est[c('C.Block','1:','2:','3:','4+:')])
+
+race_est <- race_est[!names(race_est) %in% c('1:','2:','2+:')]
+race_est[-1] <- sapply(race_est[-1], function(x) as.numeric(x))
 
 
-df <- race_est %>% gather(key, population, -C.Block, -Total) %>%
+race_est <- race_est %>% gather(key, population, -C.Block, -Total) %>%
         separate(key, into=c('number.races', 'race'), sep=':') %>%
-        mutate(percent.pop = population / Total)
+        mutate(percent.pop = population / Total) %>%
+        select(-Total,-population)
 
+write.csv(race_est,file = 'data/SF_census-race.csv')
