@@ -1,6 +1,6 @@
 ![](311_explore.jpg)  
 
-## 311 Case Data: Exploratory Analyses
+## 311 Case Data: Data Analysis
 
 [SF OpenData](https://data.sfgov.org/) provides a real-time record and API for [311 cases completed and in progress](https://data.sfgov.org/City-Infrastructure/Case-Data-from-San-Francisco-311-SF311-/vw6y-z8j6). The Data Science Working Group at Code for San Francisco looks to perform exploratory statistical analyses on this data to see whether it might posses strategically and/or politically interesting characteristics, which we will later confirm -via inferential statistics- and report to relevant stakeholders (e.g. San Francisco's public agencies and/or the publics they serve).  
 
@@ -12,15 +12,12 @@
 + [Jeff Lam](http://bit.ly/1Pm9SLJ)
 + [Matthew Mollison](http://bit.ly/1PPZXSa)
 
-### Current Status: Feb. 11, 2016
+### Current Status: Feb. 23, 2016
 
-Our sample dataset now includes zips and census blocks, per case, in preparation for joining with Census data and running our statistical analyses. To that end, we've now settled on the tests we'd like to perform, some of which span 311 case and Census data, along with some interesting cluster visualizations we wish to produce via 'bigger' data methods.  
+We've moved beyond the exploratory analyses alluded to below, and we've now performed most of our inferential/regression analyses. We'll be integrating some of those below throughout this week, but we anticipate sharing our more interesting findings and visualizations at [Code for America's upcoming CodeAcross in San Francisco (March 5, 2016)](https://www.codeforamerica.org/events/codeacross-2016/).  
 
-We'll be dividing up and executing the above over the next week and expect to share some of our findings + visualizations at [Code for America's upcoing CodeAcross in San Francisco (March 5, 2016)](https://www.codeforamerica.org/events/codeacross-2016/).  
 
-*Please note: This directory's name may soon change, as we're now moving beyond exploratory analyses.*  
-
-### Tests to be Performed
+### Statistical Tests to be Performed
 
 The tests we're currently tackling include:
 
@@ -32,14 +29,14 @@ The tests we're currently tackling include:
 + Seasonality to request types?
 + Interaction between call frequency and resolution time, per request type and/or per responsible agency?  
     
-### Quickies
+### Exploratory Quickies
 These are just some early descriptive plots, until the team begins systematically tackling the statistical analyses mentioned above.   
 
 *Please note, all of the below draw from a 5,000 record sample*:
 
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png) ![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-2.png) 
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-2.png)
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
 
 ### Similarity of Request Type Distributions (K-L Divergence)
 The graph below, produced by Matt Pancia, clusters neighborhoods according to the similarity of their request type distributions, as reflected by their [Kullback–Leibler divergence/weight](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence).  

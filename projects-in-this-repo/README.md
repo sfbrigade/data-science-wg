@@ -7,6 +7,5 @@ Please note: Many of our initiatives are add-ons to other groups' projects, so o
 + [ParkSafe GIS coordinate realignment (w/street paths) >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Park-Safe_GIS-Solution)
 + [SF's budget allocations/visualization: Measuring social impact >>](https://github.com/RocioSNg/SF_brigade_impact_gov)
 + [Interactive visualization of SF's building emissions and energy use >>](#)
-+ [MarbleTree: Geo-aggregating mental health resource data >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Marble-Tree_Mental-Health)
-+ [Exploratory analyses upon 311 call data >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/311_Exploratory-Analyses)
++ [SF 311 Data Analysis >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/SF_311_Data-Analysis)
 + [Adopt-a-Drain: Predicting flooded drains (per drain, zip, and/or day) >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Drain-Flooding_Prediction)
