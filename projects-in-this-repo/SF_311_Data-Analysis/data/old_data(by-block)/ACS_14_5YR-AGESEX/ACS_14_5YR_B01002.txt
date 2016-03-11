@@ -1,5 +1,5 @@
-C02003
-DETAILED RACE
+B01002
+MEDIAN AGE BY SEX
 
 Universe: Total population
 

@@ -3,6 +3,8 @@ DETAILED RACE
 
 Universe: Total population
 
+Note: This is a modified view of the original table.
+
 Although the American Community Survey (ACS) produces population, demographic and housing unit estimates, it is the Census Bureau's Population Estimates Program that produces and disseminates the official estimates of the population for the nation, states, counties, cities and towns and estimates of housing units for states and counties.
 
 

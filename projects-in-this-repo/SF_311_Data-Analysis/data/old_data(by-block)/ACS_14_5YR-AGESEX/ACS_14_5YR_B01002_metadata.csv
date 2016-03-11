@@ -1,0 +1,9 @@
+GEO.id,Id
+GEO.id2,Id2
+GEO.display-label,Geography
+HD01_VD02,Estimate; Median age -- - Total:
+HD02_VD02,Margin of Error; Median age -- - Total:
+HD01_VD03,Estimate; Median age -- - Male
+HD02_VD03,Margin of Error; Median age -- - Male
+HD01_VD04,Estimate; Median age -- - Female
+HD02_VD04,Margin of Error; Median age -- - Female

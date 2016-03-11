@@ -12,9 +12,11 @@
 + [Jeff Lam](http://bit.ly/1Pm9SLJ)
 + [Matthew Mollison](http://bit.ly/1PPZXSa)
 
-### Current Status: Feb. 23, 2016
+### Current Status: March 10, 2016
 
-We've moved beyond the exploratory analyses alluded to below, and we've now performed most of our inferential/regression analyses. We'll be integrating some of those below throughout this week, but we anticipate sharing our more interesting findings and visualizations at [Code for America's upcoming CodeAcross in San Francisco (March 5, 2016)](https://www.codeforamerica.org/events/codeacross-2016/).  
+We recently got to share some of our more interesting findings and visualizations at [Code for America's upcoming CodeAcross in San Francisco (March 5, 2016)](https://www.codeforamerica.org/events/codeacross-2016/). Thereafter, we had some great discussions with the City's Chief Data Officer, Joy Bonaguro, wherein we learned about some things we could do to hone our accuracy and utility. Thus, we've since updated our Census profiling to the tract level and matched our neighborhoods to those more commonly used in SF OpenData.  
+
+*Please Note: This project's README and directory will substantially change in the coming week, as we begin to publicly display our inferential statistics and lay the groundwork for our final report.  
 
 
 ### Statistical Tests to be Performed
@@ -23,7 +25,7 @@ The tests we're currently tackling include:
 
 + Income correlates / significant diffs?
 + Resolution time (by agency, overall, neighborhood, income, etc)?
-+ Neighborhoods per request type?
++ C.Neighborhoods per request type?
 + Ethnic correlates / significant diffs?
 + Significant diffs in request types by source?
 + Seasonality to request types?
@@ -44,9 +46,14 @@ The graph below, produced by Matt Pancia, clusters neighborhoods according to th
 ![](figure/kl_divergence_graph.png)  
 
 ### Time-Lapse Heatmap of 311 Requests for Sidewalk and Street Cleaning
-The heatmap linked to below geographically reflects the number of 311 requests for sidewalk and street cleaning over time. It was produced by Jeffrey Lam and will help inform our impending investigations over seasonality to request types.
+The heatmap linked to below, by Jeff Lam, geographically reflects the number of 311 requests for sidewalk and street cleaning over time. It was produced by Jeffrey Lam and will help inform our impending investigations over seasonality to request types.
 
 [![](figure/cartodb_heatmap_sf-311-calls.jpg)](http://bit.ly/1WnReqW)  
+
+### Daily Counts of 311 Cases by Category
+This plot, by Matt Mollison, shows the total number of 311 cases by request Category (a higher order grouping), per day since 2008. It was drawn from the entire dataset (vs. a sample).
+
+![](figure/311-request-category_matt-mollison.png)
 
 ### Resolution Time Exploration (in Hours)
 We'll be adding plots later. These are just some summaries to inspire the DSWG's more advanced/inferential statistics.
@@ -54,66 +61,66 @@ We'll be adding plots later. These are just some summaries to inspire the DSWG's
 
 
 #### Top 10 Request Types...
-**--- By Shortest Mean Resolution Time (across all neighborhoods) ---**
+**--- By Shortest Median Resolution Time (across all neighborhoods) ---**
 
-|Request.Type                                             | Mean.Resolve|
-|:--------------------------------------------------------|------------:|
-|Sign Repair - Loose                                      |         0.03|
-|mta - residential_parking_permit - request_for_service   |         0.04|
-|tt_collector - tt_collector - mailing_request            |         0.23|
-|puc - water - customer_callback                          |         0.79|
-|mta - bicycle - request_for_service                      |         1.20|
-|Litter_Receptacle_Request_New_Removal                    |         1.69|
-|homeless_concerns - homeless_other - request_for_service |         2.06|
-|puc - water - request_for_service                        |         2.12|
-|City_garbage_can_overflowing                             |         2.30|
-|Illegal Postings - Posting_Too_High_on_Pole              |         3.12|
+|Request.Type                                             | Median.Resolve|
+|:--------------------------------------------------------|--------------:|
+|Sign Repair - Loose                                      |           0.03|
+|mta - residential_parking_permit - request_for_service   |           0.04|
+|mta - parking_enforcement - request_for_service          |           0.18|
+|tt_collector - tt_collector - mailing_request            |           0.23|
+|puc - water - request_for_service                        |           0.47|
+|puc - water - customer_callback                          |           0.79|
+|Water_leak                                               |           1.09|
+|mta - bicycle - request_for_service                      |           1.20|
+|Litter_Receptacle_Request_New_Removal                    |           1.69|
+|homeless_concerns - homeless_other - request_for_service |           2.06|
 
-**--- By Longest Mean Resolution Time (across all neighborhoods) ---**
+**--- By Longest Median Resolution Time (across all neighborhoods) ---**
 
-|Request.Type                                | Mean.Resolve|
-|:-------------------------------------------|------------:|
-|dpw - bsm - followup_request                |     27208.90|
-|Public_Stairway_Defect                      |     25823.03|
-|Streetlight - Other_Request_New_Streetlight |     18549.16|
-|Utility Lines/Wires                         |     17381.97|
-|rpd - rpd_other - request_for_service       |     11650.02|
-|SFHA Priority - Preventive                  |     10512.38|
-|sfpd - sfpd - request_for_service           |     10336.51|
-|puc - puco - complaint                      |      8905.67|
-|dtis - dtis - request_for_service           |      8573.08|
-|Streetlight - Other_Request_Light_Shield    |      6312.14|
+|Request.Type                                | Median.Resolve|
+|:-------------------------------------------|--------------:|
+|dpw - bsm - followup_request                |       27208.90|
+|Public_Stairway_Defect                      |       25823.03|
+|Streetlight - Other_Request_New_Streetlight |       18549.16|
+|Utility Lines/Wires                         |       17381.97|
+|rpd - rpd_other - request_for_service       |       11650.02|
+|sfpd - sfpd - request_for_service           |       10336.51|
+|puc - puco - complaint                      |        8905.67|
+|dtis - dtis - request_for_service           |        6662.18|
+|Streetlight - Other_Request_Light_Shield    |        6312.14|
+|Building - Illegal_Guest_Room_Conversions   |        6300.25|
 
-#### Top 10 Neighborhoods...
-**--- By Shortest Mean Resolution Time (across all request types) ---**
+#### Top 10 C.Neighborhoods...
+**--- By Shortest Median Resolution Time (across all request types) ---**
 
-|Neighborhood          | Mean.Resolve|
-|:---------------------|------------:|
-|McLaren Park          |         2.82|
-|Candlestick Point SRA |         6.30|
-|Parkmerced            |        12.40|
-|Merced Manor          |        15.88|
-|Sherwood Forest       |        24.13|
-|Peralta Heights       |        47.58|
-|Alamo Square          |        47.78|
-|Little Hollywood      |        48.76|
-|Lake Street           |        55.12|
-|Balboa Terrace        |        78.03|
+|C.Neighborhood    | Median.Resolve|
+|:-----------------|--------------:|
+|McLaren Park      |           7.25|
+|Lakeshore         |          21.61|
+|Lincoln Park      |          22.63|
+|South of Market   |          39.49|
+|Tenderloin        |          45.69|
+|Mission           |          47.25|
+|Nob Hill          |          47.83|
+|Hayes Valley      |          51.64|
+|Lone Mountain/USF |          53.18|
+|North Beach       |          53.63|
 
-**--- By Longest Mean Resolution Time (across all request types) ---**
+**--- By Longest Median Resolution Time (across all request types) ---**
 
-|Neighborhood        | Mean.Resolve|
-|:-------------------|------------:|
-|Holly Park          |      2540.00|
-|Cole Valley         |      2435.79|
-|Cayuga              |      2343.87|
-|Anza Vista          |      1736.16|
-|Presidio Terrace    |      1541.12|
-|Cow Hollow          |      1462.26|
-|Glen Park           |      1394.10|
-|West of Twin Peaks  |       924.89|
-|Northern Waterfront |       887.75|
-|Castro/Upper Market |       864.53|
+|C.Neighborhood   | Median.Resolve|
+|:----------------|--------------:|
+|Potrero Hill     |         170.34|
+|Pacific Heights  |         138.16|
+|Treasure Island  |         133.12|
+|Glen Park        |         132.21|
+|Seacliff         |         124.91|
+|Inner Richmond   |         120.26|
+|Presidio Heights |         113.30|
+|Mission Bay      |         109.09|
+|Golden Gate Park |         102.84|
+|Inner Sunset     |         102.82|
 
 
 
