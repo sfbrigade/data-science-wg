@@ -24,5 +24,15 @@ The DSWG's initiatives are centered on building data science components for CfSF
 + [SF's budget allocations/visualization: Measuring social impact >>](https://github.com/RocioSNg/SF_brigade_impact_gov)
 + [Interactive visualization of SF's building emissions and energy use >>](https://github.com/smoningi/SF-Environment-Benchmark)
 + [SF 311 Data Analysis >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/SF_311_Data-Analysis)
-+ [Adopt-a-Drain: Predicting flooded drains (per drain, zip, and/or day) >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Drain-Flooding_Prediction)
++ [Predicting Relative Risk of Fire in SF's Buildings](#)
+
+### Recent Happenings
+
+The team recently presented some of its work on the above at Code for San Francisco's CodeAcross 2016, where we hoped to inspire the day's hackers to use SF's OpenData portal in creative -and productive- ways.
+
+[To View a Small Photo Gallery from the Event, Click Here >>](http://bit.ly/1MDt5az)
+[![](cfa_codeacross_sf_data-science.jpg)](http://bit.ly/1MDt5az)
+
+[To View Our Presentation (with Plots and Overviews), Click Here >>](http://bit.ly/1UNIg7H)
+[![](cfa_codeacross_sf_presentation.jpg)](http://bit.ly/1UNIg7H)
 
