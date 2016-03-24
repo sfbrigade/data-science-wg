@@ -30,8 +30,8 @@ The DSWG's initiatives are centered on building data science components for CfSF
 
 The team recently presented some of its work on the above at Code for San Francisco's CodeAcross 2016, where we hoped to inspire the day's hackers to use SF's OpenData portal in creative -and productive- ways.
 
-[To View a Small Photo Gallery from the Event, Click Here >>](http://bit.ly/1MDt5az)
-[![](cfa_codeacross_sf_data-science.jpg)](http://bit.ly/1MDt5az)
+[To View a Small Photo Gallery from the Event, Click Here >>](http://1drv.ms/1T73rBP)
+[![](cfa_codeacross_sf_data-science.jpg)](http://1drv.ms/1T73rBP)
 
 [To View Our Presentation (with Plots and Overviews), Click Here >>](http://bit.ly/1UNIg7H)
 [![](cfa_codeacross_sf_presentation.jpg)](http://bit.ly/1UNIg7H)
