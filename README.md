@@ -4,6 +4,7 @@
 
 The **Data Science Working Group’s** purpose is to efficiently assess and tackle Code for San Francisco’s data science needs. Our practicing and aspiring data scientists are available to:  
 
++ provide solutions to data science centric social good problems;
 + assess/inspire the possibility of data science components in other projects;
 + provide resources to help produce those components;
 + provide a learning environment for ourselves and others to learn more practical data science.
