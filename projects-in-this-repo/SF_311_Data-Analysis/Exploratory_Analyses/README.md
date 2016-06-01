@@ -1,16 +1,16 @@
-![](311_explore.jpg)  
+![](../311_explore.jpg)  
 
 ## 311 Case Data: Data Analysis
 
 [SF OpenData](https://data.sfgov.org/) provides a real-time record and API for [311 cases completed and in progress](https://data.sfgov.org/City-Infrastructure/Case-Data-from-San-Francisco-311-SF311-/vw6y-z8j6). The Data Science Working Group at Code for San Francisco looks to perform exploratory statistical analyses on this data to see whether it might posses strategically and/or politically interesting characteristics, which we will later confirm -via inferential statistics- and report to relevant stakeholders (e.g. San Francisco's public agencies and/or the publics they serve).  
 
 **Responsible DSWG Teammates**
-+ [Matthew Pancia](http://bit.ly/1PFuA8k)
++ [Matthew Pancia, Ph.D.](http://bit.ly/1PFuA8k)
 + [Elena Palesis](http://bit.ly/1mgjXl4)
-+ [Yiwen Yu](http://bit.ly/1mgkqDE)
-+ [Jude Calvillo](http://linkd.in/1BGeytb)
++ [Jude Calvillo (Project Lead)](http://linkd.in/1BGeytb)
 + [Jeff Lam](http://bit.ly/1Pm9SLJ)
-+ [Matthew Mollison](http://bit.ly/1PPZXSa)
++ [Matthew Mollison, Ph.D.](http://bit.ly/1PPZXSa)
++ [Hannah Burak](http://bit.ly/1U7D13N)
 
 ### Current Status: March 10, 2016
 
