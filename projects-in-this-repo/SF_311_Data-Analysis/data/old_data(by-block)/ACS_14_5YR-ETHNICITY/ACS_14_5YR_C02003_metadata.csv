@@ -1,0 +1,41 @@
+GEO.id,Id
+GEO.id2,Id2
+GEO.display-label,Geography
+HD01_VD01,Estimate; Total:
+HD02_VD01,Margin of Error; Total:
+HD01_VD02,Estimate; Population of one race:
+HD02_VD02,Margin of Error; Population of one race:
+HD01_VD03,Estimate; Population of one race: - White
+HD02_VD03,Margin of Error; Population of one race: - White
+HD01_VD04,Estimate; Population of one race: - Black or African American
+HD02_VD04,Margin of Error; Population of one race: - Black or African American
+HD01_VD05,Estimate; Population of one race: - American Indian and Alaska Native
+HD02_VD05,Margin of Error; Population of one race: - American Indian and Alaska Native
+HD01_VD06,Estimate; Population of one race: - Asian alone
+HD02_VD06,Margin of Error; Population of one race: - Asian alone
+HD01_VD07,Estimate; Population of one race: - Native Hawaiian and Other Pacific Islander
+HD02_VD07,Margin of Error; Population of one race: - Native Hawaiian and Other Pacific Islander
+HD01_VD08,Estimate; Population of one race: - Some other race
+HD02_VD08,Margin of Error; Population of one race: - Some other race
+HD01_VD09,Estimate; Population of two or more races:
+HD02_VD09,Margin of Error; Population of two or more races:
+HD01_VD11,Estimate; Population of two or more races: - Two races including Some other race
+HD02_VD11,Margin of Error; Population of two or more races: - Two races including Some other race
+HD01_VD12,"Estimate; Population of two or more races: - Two races excluding Some other race, and three or more races"
+HD02_VD12,"Margin of Error; Population of two or more races: - Two races excluding Some other race, and three or more races"
+HD01_VD13,Estimate; Population of two or more races: - Population of two races:
+HD02_VD13,Margin of Error; Population of two or more races: - Population of two races:
+HD01_VD14,Estimate; Population of two or more races: - Population of two races: - White; Black or African American
+HD02_VD14,Margin of Error; Population of two or more races: - Population of two races: - White; Black or African American
+HD01_VD15,Estimate; Population of two or more races: - Population of two races: - White; American Indian and Alaska Native
+HD02_VD15,Margin of Error; Population of two or more races: - Population of two races: - White; American Indian and Alaska Native
+HD01_VD16,Estimate; Population of two or more races: - Population of two races: - White; Asian
+HD02_VD16,Margin of Error; Population of two or more races: - Population of two races: - White; Asian
+HD01_VD17,Estimate; Population of two or more races: - Population of two races: - Black or African American; American Indian and Alaska Native
+HD02_VD17,Margin of Error; Population of two or more races: - Population of two races: - Black or African American; American Indian and Alaska Native
+HD01_VD18,Estimate; Population of two or more races: - Population of two races: - All other two race combinations
+HD02_VD18,Margin of Error; Population of two or more races: - Population of two races: - All other two race combinations
+HD01_VD19,Estimate; Population of two or more races: - Population of three races
+HD02_VD19,Margin of Error; Population of two or more races: - Population of three races
+HD01_VD20,Estimate; Population of two or more races: - Population of four or more races
+HD02_VD20,Margin of Error; Population of two or more races: - Population of four or more races

@@ -1,5 +1,5 @@
-C02003
-DETAILED RACE
+B01003
+TOTAL POPULATION
 
 Universe: Total population
 

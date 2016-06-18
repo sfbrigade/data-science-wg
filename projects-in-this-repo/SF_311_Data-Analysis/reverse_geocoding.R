@@ -1,3 +1,9 @@
+## This script, by Jude Calvillo, taps two APIs to get the FIPS/Census Block code, Zip code, and Map URL of
+## each 311 case, according to its coordinates.
+
+## PLEASE NOTE: Our final analyses ended up using tracts (not blocks), but we nonetheless 
+## feel this script could be useful to some.
+
 ## Load libraries.
 library(httr)
 library(jsonlite)
@@ -8,7 +14,7 @@ cases_sample <- read.csv("data/cases_sample.csv", na.strings = "")
 ## !! Temporary solution to those few instances where no address/location was given
 ## !! Logically, we cannot select some random neighborhood's coordinates, as this could
 ## !! skew our data, nor are there citywide fields in census data. Therefore, we'll probably
-## !! have to later fill in the census-derived fields for these records with some mean statistics.
+## !! have to later fill in the census-derived fields for these records with some mean/median statistics.
 cases_sample <- cases_sample[!(is.na(cases_sample$Point)),]
 
 ## It seems useful, for now and in the future, to split the 'Point' coordinates into two fields.
