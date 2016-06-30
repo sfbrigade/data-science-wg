@@ -2,7 +2,7 @@
 
 ## Thanks for stopping by!
 
-The **Data Science Working Group’s** purpose is to efficiently assess, inspire, and tackle Code for San Francisco’s data science needs, as well as to help the City with its data science needs whenever appropriate. Our practicing and aspiring data scientists are available to:  
+The **Data Science Working Group’s** purpose is to efficiently assess, inspire, and tackle [Code for San Francisco’s](http://www.codeforsanfrancisco.org) data science needs, as well as to help the City with its data science needs whenever appropriate. Our practicing and aspiring data scientists are available to:  
 
 + develop data science-centric solutions to social good problems;
 + assess/inspire the possibility of data science components in other projects;
@@ -20,7 +20,7 @@ Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wi
 
 ### Current Initiatives
 
-Here's what we're currently working on, mostly with gov't/org partners, but as mentioned above, we're eager to work with -or inspire- dedicated project groups.
+Here's what we're currently working on, mostly with gov't/org partners, but as mentioned above, we're also eager to work with -or inspire- dedicated project groups.
 
 + [U.S. Dept. of Transportation Hazmat Incident Prediction and Anomaly Detection >>](https://github.com/bayeshack2016/cfsf-datasci_dot-hazmat)
 + [City of SF Planning: Development Pipeline Report >>](https://github.com/thfield/sf-planning-pipeline-report)
@@ -28,6 +28,9 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 + [Interactive visualization of SF's building emissions and energy use >>](https://github.com/smoningi/SF-Environment-Benchmark)
 + [City of SF Budget Visualization >>](https://github.com/sameerank/sf-budget-visualization)
 + [Predicting Relative Risk of Fire in SF's Buildings >>](#)
++ [SF OpenData Search Analytics for Improving UX](https://github.com/sfbrigade/open-data-search)
++ [CA Dept. of Justice OpenJustice Hypothesis Testing and Predictive Modeling >>](https://github.com/sfbrigade/CA_DOJ_OpenJustice)
++ [SF Homelessness Analysis Project (more info coming) >>](https://github.com/sfbrigade/sfhomelessproject)
 
 ### Recent Past Initiatives
 
@@ -39,15 +42,11 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
     - Status = On hold until further notice
 
 
-### Recent Happenings
+### Recent Happenings: As of June 29, 2016
 
-Code for SF's Data Science Working Group continues to make great strides in its local impact and apparent viability. Since our last repo update, our young group won its government challenge at one of the nation's premier data science-focused hackathons (Bayes Hack, 2016). It also recently presented its numerous projects to local hackers and potential gov't/org partners at Code for SF's Demo Night, as well as presented its 311 analysis findings directly to City officials.  
+For the latest news and insights from the Data Science Working Group, we invite you to visit our new website, at [datascience.codeforsanfrancisco.org](http://datascience.codeforsanfrancisco.org/).
 
-...and now we've got a website(!), to better convey the full scope of our identity, happenings, and means of engagement.  
-
-We invite you to visit our new website, at [datascience.codeforsanfrancisco.org](http://datascience.codeforsanfrancisco.org/), to learn more about the above! 
-
-[![](dswg_site-screenshot.jpg)](http://www.datascience-working.org/)
+[![](dswg_site-screenshot.jpg)](http://datascience.codeforsanfrancisco.org/)
 
 
 
