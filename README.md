@@ -27,8 +27,8 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 + [City of SF 311 Case Data Analysis >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/SF_311_Data-Analysis)
 + [Interactive visualization of SF's building emissions and energy use >>](https://github.com/smoningi/SF-Environment-Benchmark)
 + [City of SF Budget Visualization >>](https://github.com/sameerank/sf-budget-visualization)
-+ [Predicting Relative Risk of Fire in SF's Buildings >>](#)
-+ [SF OpenData Search Analytics for Improving UX](https://github.com/sfbrigade/open-data-search)
++ [Predicting Relative Risk of Fire in SF's Buildings >>](https://github.com/bnlcas/SF_firerisk)
++ [SF OpenData Search Analytics for Improving UX >>](https://github.com/sfbrigade/open-data-search)
 + [CA Dept. of Justice OpenJustice Hypothesis Testing and Predictive Modeling >>](https://github.com/sfbrigade/CA_DOJ_OpenJustice)
 + [SF Homelessness Analysis Project (more info coming) >>](https://github.com/sfbrigade/sfhomelessproject)
 
