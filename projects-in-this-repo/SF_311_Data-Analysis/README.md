@@ -17,28 +17,53 @@
 We've recently finished our statistical tests and presented the answers to our research questions to SF's 311 Deputy Director and Chief Data Officer, although this resulted in having to revisit our tests for predicting cases that would get transferred. Thus, we're revisiting those tests while moving on to reporting, which we hope to finish as quickly as possible.
 
 + [**Click to view our early exploratory analyses (visuals, summary stats, etc) >>**](/Exploratory_Analyses/)
+  
 
-*What you see below is a foundation for integrating our statistical tests and final reporting.*
+### Table of Contents (click to jump)
 
-### Introduction
++ [Introduction][]
++ [Literature Review][]
++ [Methodology][]
+    - Data Sources
++ [Research Questions][]
+    - Operational Concerns
+    - Equity Concerns
++ [Conclusion / Implications][]
+    - Public Policy
+    - Operations
+    - Future Research
++ [Appendix][]  
+
+
+### Introduction: It's Coming
 
 + Intro w/impetus.
 + Acknowledgements.
-*Please note: This introduction will soon replace the one above.*
+
+***
 
 ### Literature Review
 
 As a critical connection between municipal resources and needs, 311 call centers have become a vital component of municipal operations for large cities. They also provide a wealth of information on municipal needs, operations, and resources across the urban landscape. The opportunity to delve into this rich data and retrieve actionable insights has already been acted upon by several cities.  
 
-Third parties have taken advantage, using open data portals to access 311 data and tease out insights. A study from New York University used New York City's 311 data showed that complaints about neighbors are more likely to occur in areas bordering two homogenous communities where ethnic and racial group are not clearly defined. The study used edge-detection algorithms with census data to define ethnically homogenous areas and detect the "fuzziness" of borders between them, then mapped complaint calls to these areas. Another study from scholars at Yale and UC-Berkeley found a positive negative relationship between police stops which turned up no illegal behavior and 311 calls in the area, with its authors concluding that New York City's controversial stop-and-frisk practices seed a distrust of government which affects 311 usage. After city legislation aimed at noise complaints was introduced, the New Yorker released an analysis of the 311 noise complaints which prompted it, breaking down the noisiest times, days, neighborhoods and differences between noise types.  
+Third parties have taken advantage, using open data portals to access 311 data and tease out insights. A study from New York University used New York City's 311 data showed that complaints about neighbors are more likely to occur in areas bordering two homogenous communities where ethnic and racial group are not clearly defined.<sup>1</sup> The study used edge-detection algorithms with census data to define ethnically homogenous areas and detect the "fuzziness" of borders between them, then mapped complaint calls to these areas. Another study from scholars at Yale and UC-Berkeley found a positive negative relationship between police stops which turned up no illegal behavior and 311 calls in the area, with its authors concluding that New York City's controversial stop-and-frisk practices seed a distrust of government which affects 311 usage.<sup>2</sup> After city legislation aimed at noise complaints was introduced, the New Yorker released an analysis of the 311 noise complaints which prompted it, breaking down the noisiest times, days, neighborhoods and differences between noise types.<sup>3</sup>  
 
-Beyond describing human behavior, some cities have taken the next step in turning 311 data into action by connecting information coming from and under the purview of multiple agencies and using predictive models to save time and money for cities. In New York City, a cluster of reports about sanitation concerns or food-borne illness related to a particular restaurant now triggers a quicker response from the health department. The city also prioritizes building inspections by crossing data on landlords delinquent on their property taxes and calls complaining about illegal rental unit conversion. In Buffalo, local law enforcement uses a combination of 311 call data and police report data to more accurately target regular 'clean sweeps' to address troubled neighborhoods. These are just a few examples from those cities leading the way in making informed operational changes with 311, but there are a great many opportunities to further exploit open 311 data to improve local government.  
+Beyond describing human behavior, some cities have taken the next step in turning 311 data into action by connecting information coming from and under the purview of multiple agencies and using predictive models to save time and money for cities. In New York City, a cluster of reports about sanitation concerns or food-borne illness related to a particular restaurant now triggers a quicker response from the health department. The city also prioritizes building inspections by crossing data on landlords delinquent on their property taxes and calls complaining about illegal rental unit conversion. In Buffalo, local law enforcement uses a combination of 311 call data and police report data to more accurately target regular 'clean sweeps' to address troubled neighborhoods.<sup>4</sup> These are just a few examples from those cities leading the way in making informed operational changes with 311, but there are a great many opportunities to further exploit open 311 data to improve local government.  
+
+***
+<sup>1</sup>New York University, Study Uses 311 Complaints to Track When and Where Neighborhood Conflict Emerges. August 21, 2015   [https://www.nyu.edu/about/news-publications/news/2015/08/21/study-uses-311-complaints-to-track-when-and-where-neighborhood-conflict-emerges.html ](https://www.nyu.edu/about/news-publications/news/2015/08/21/study-uses-311-complaints-to-track-when-and-where-neighborhood-conflict-emerges.html)  
+<sup>2</sup>Tuhus-Dubrow, Rebecca, Who is Most Likely to Dial 311? *Next City*,   [https://nextcity.org/daily/entry/who-is-most-likely-dial-311](https://nextcity.org/daily/entry/who-is-most-likely-dial-311)  
+<sup>3</sup>Wellington, Ben. Mapping New York’s Noisiest Neighborhoods. *The New Yorker*, January 17, 2015. [http://www.newyorker.com/tech/elements/mapping-new-york-noise-complaints](http://www.newyorker.com/tech/elements/mapping-new-york-noise-complaints)  
+<sup>4</sup>Napier, Jessica Renee. Buffalo Uses 311 Data to “Sweep” Neighborhoods. *Government Technology*, June 6, 2013.  
+[http://www.govtech.com/technology/Buffalo-Uses-311-Data-to-Sweep-Neighborhoods.html](http://www.govtech.com/technology/Buffalo-Uses-311-Data-to-Sweep-Neighborhoods.html)
+
+***
 
 ### Methodology
 
-Informed and inspired by its exploratory analyses, the Data Science Working Group sought to answer questions pertaining to 311's operational concerns, as well as questions the public might have over the City's equitable treatment of cases, by type and demographic association or deduction. To that end, although the DSWG was able to secure full and filtered datasets on 311 cases, using San Francisco's celebrated OpenData portal and APIs, our demographic data and the true nature of its association with cases can, at times, result in one or both of the following interpretive limitations:  
+Informed and inspired by its [exploratory analyses](http://bit.ly/29vOYfi), the Data Science Working Group sought to answer questions pertaining to 311's operational concerns, as well as questions the public might have over the City's equitable treatment of cases, by type and demographic association or deduction. To that end, although the DSWG was able to secure full and filtered datasets on 311 cases, using [San Francisco's celebrated OpenData portal and APIs](https://data.sfgov.org/), our demographic data and the true nature of its association with cases can, at times, result in one or both of the following interpretive limitations:  
 
-1. Our demographic data source was the American Community Survey (ACS), which is akin to an annual 'mini census' between the decennial U.S. Censuses. However, due to substantially smaller sample sizes, its margins of error are larger than those of the Census. Still, as the ACS is often considered the gold standard of -freely available- demographic data, from which many public and private institutions draw, the DSWG humbly proposes that the findings herein are at least as reliable as those of public policy studies equally dependent on ACS data. 
+1. Our demographic data source was the [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/), which is akin to an annual 'mini census' between the decennial U.S. Censuses. However, due to substantially smaller sample sizes, its margins of error are larger than those of the Census. Still, as the ACS is often considered the gold standard of -freely available- demographic data, from which many public and private institutions draw, the DSWG humbly proposes that the findings herein are at least as reliable as those of public policy studies equally dependent on ACS data. 
 
 2. Crucially, each case's geographic coordinates are those of the incident/location being reported, not necessarily those of the caller. The researchers' demographically related tests and interpretations were careful to make that distinction while still managing to draw insights of reasonable interest to the public.
 
@@ -52,27 +77,52 @@ Finally, on the matter of sample sizes per statistical test, where necessary or 
 + [Sample of 311 case data (5000 case random sample of the API data pull above)](https://github.com/sfbrigade/data-science-wg/blob/master/projects-in-this-repo/SF_311_Data-Analysis/data/cases_sample.csv?raw=true)
 + [American Community Survey data (2014; 5 year estimates)](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/SF_311_Data-Analysis/data)
 
+***
+
 
 
 ### Research Questions
 
 #### Operational Concerns
+These were questions directly posed by SF City gov't leadership or inspired by conversations with them.
 
 **1. What case features and/or feature values predict cases that would later become 'invalid'?**  
 + *Please see status above.*  
 
-**2. What case features and/or feature values predict cases that would eventually get transferred?**  
-+ *Please see status above.*  
+**2. For transferred cases, which initial Responsible Agency designations tend to drive transfers to other Responsible Agencies? (i.e. Can 311 better integrate its reporting with one or more Responsible Agencies?)**  
+  
++ *In the heatmap below, one can see transferred cases' originally designated Responsible Agencies (Y axis) and the Responsible Agencies they were ultimately transferred to (X axis). Therein, the darker the square at each intersection, the more often a transfer between those intersecting agencies took place, at least according to 311 records.*  
+  
++ *It appears, from the heatmap, that MUNI Work Que and 311 Supervisor Queue-originating cases tend to dominate transferred cases, and such cases mostly get transferred to the DPW Ops Que. Interestingly, transferred cases originating from the 311 Supervisor Queue also apparently tend to transfer to the DPT SignShop in Areas 1 or 2.*  
 
+    - *One can see this more clearly in the second heatmap, which isolates transferred cases originating in the 311 Supervisor Queue and then arranges the destination Responsible Agency (X axis) in descending order.*   
+  
++ *Please note: all of the values above had to be log transformed for more useful shading, given that the frequency of cases transferred to the DPW Ops Que was so high as to flatten the shading of transfers to all other Responsible Agencies.*  
+  
++ *To see the full investigation (by Matt Mollison, Ph.D.), including source code (Python) and comments, [click here.](http://bit.ly/29vPxWy)*  
+
+![](figure/311_transfers_heatmap.png)  
+
+![](figure/311_trans-sup_heatmap.png)
+  
 **3. Can we fairly accurately forecast the frequency of one or more request categories from their apparent seasonality?**  
+
 + *Yes. More details coming. In the meantime, here are some early plots. The first is a seasonal chart exploring monthly seasonality, between years, of a specific request type. The second is a seasonal decomposition, across years, for a broader request category (Street and Sidewalk Cleaning).*
 ![](figure/season_exploration.png)
-![](figure/cat1_seasonal-decomp.png)
+![](figure/311_seasonal-decomp.png)
 
-**4. Is there any potential for more responsive reporting tools via app or voice interfaces? (i.e. they change upon meeting one or more conditions) -- Can we detect anomalies in frequency of one or more request categories, particularly per geographic location?**  
-+ Yes. Anomaly detection assets coming.  
+**4. Can we detect anomalies in frequency of one or more request categories, particularly per geographic location?**  
+
++ Yes, we can. If one looks at the seasonal decomposition above, particularly the extracted remainder, one can begin to see which observations might be anomalous to such seasonally sensitive data. One can then tackle anomaly detection accordingly, via seasonal decomposition + generalized *Extreme Studentized Deviate* test (i.e. *Rosner test* for outliers) upon the remainder, ...or one can simply invoke [Twitter's convenient new anomaly detection package](https://github.com/twitter/AnomalyDetection), which employs the above while also offering optional piecewise appromixation.  
+
+    - The following plot reveals those days that exhibited an anomolous frequency of requests for Street and Sidewalk Cleaning (*more on this later*).
+![](figure/311_anomaly-detection.png)
 
 **5. Has reporting 'homeless concerns' substantially changed since 311 changed its app and voice menus around such reporting?**  
+
++ *Unfortunately, answering this question proved impossible, because, prior to having formalized a category and Responsible Agency for homeless concerns, the reporting and assignment of such requests ran the gamut of possibilities.*  
+
+***
 
 #### Equity Concerns
 
@@ -138,110 +188,29 @@ Finally, on the matter of sample sizes per statistical test, where necessary or 
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
 
-+ *Neighborhood: It does appear that cases' corresponding neighborhoods are predictive of income, which is intuitive. However, as a potential predictor variable, neighborhood also happens to explain the most amount of variation in income vs. all predictors tested herein, explaining roughly 74% of the variation.*
++ *Neighborhood: It does appear that cases' corresponding neighborhoods are predictive of income, which is intuitive. However, neighborhood, as a predictor, also happens to explain the -most- variation in income vs. all predictors tested herein, explaining roughly 74% of the variation.*
  
     
 
 ```
-## 
-## Call:
-## lm(formula = pc_inc2014 ~ C.Neighborhood, data = income)
-## 
-## Residuals:
-##    Min     1Q Median     3Q    Max 
-## -29210  -8016    -68   5754  56588 
-## 
-## Coefficients:
-##                                              Estimate Std. Error t value
-## (Intercept)                                   24379.0      725.5  33.602
-## C.NeighborhoodBernal Heights                  26949.4     1167.3  23.087
-## C.NeighborhoodCastro/Upper Market             57678.7     1145.9  50.333
-## C.NeighborhoodChinatown                       -2558.2     1400.4  -1.827
-## C.NeighborhoodExcelsior                         581.4     1222.9   0.475
-## C.NeighborhoodFinancial District/South Beach  62135.8     1242.0  50.028
-## C.NeighborhoodGlen Park                       41639.6     1982.3  21.005
-## C.NeighborhoodGolden Gate Park                85225.0     2068.5  41.202
-## C.NeighborhoodHaight Ashbury                  43142.0     1200.4  35.939
-## C.NeighborhoodHayes Valley                    34800.6     1167.3  29.813
-## C.NeighborhoodInner Richmond                  30223.9     1288.7  23.453
-## C.NeighborhoodInner Sunset                    30612.8     1292.2  23.691
-## C.NeighborhoodJapantown                       31275.0     2624.7  11.916
-## C.NeighborhoodLakeshore                       -5326.7     3718.8  -1.432
-## C.NeighborhoodLincoln Park                     9111.0     8584.6   1.061
-## C.NeighborhoodLone Mountain/USF               21845.7     1353.9  16.136
-## C.NeighborhoodMarina                          62316.0     1499.3  41.562
-## C.NeighborhoodMcLaren Park                   -10412.0     3718.8  -2.800
-## C.NeighborhoodMission                         23219.4      860.2  26.992
-## C.NeighborhoodMission Bay                     41316.0     2002.7  20.631
-## C.NeighborhoodNob Hill                        27860.3     1186.6  23.480
-## C.NeighborhoodNoe Valley                      53703.7     1542.3  34.820
-## C.NeighborhoodNorth Beach                     21400.3     1565.9  13.667
-## C.NeighborhoodOceanview/Merced/Ingleside       2629.6     1467.1   1.792
-## C.NeighborhoodOuter Mission                    5178.2     1410.6   3.671
-## C.NeighborhoodOuter Richmond                  17137.4     1147.8  14.931
-## C.NeighborhoodPacific Heights                 65012.0     1437.6  45.222
-## C.NeighborhoodPortola                          2853.5     1395.4   2.045
-## C.NeighborhoodPotrero Hill                    53914.7     1590.9  33.889
-## C.NeighborhoodPresidio                        56229.0     7021.8   8.008
-## C.NeighborhoodPresidio Heights                56319.3     2092.2  26.918
-## C.NeighborhoodRussian Hill                    50598.7     1455.0  34.776
-## C.NeighborhoodSeacliff                        84225.0     3566.7  23.614
-## C.NeighborhoodSouth of Market                 20317.1     1093.0  18.589
-## C.NeighborhoodSunset/Parkside                 13394.6     1046.8  12.796
-## C.NeighborhoodTenderloin                      -1211.2      995.5  -1.217
-## C.NeighborhoodTreasure Island                -10278.0     8584.6  -1.197
-## C.NeighborhoodTwin Peaks                      38939.7     2480.9  15.696
-## C.NeighborhoodVisitacion Valley               -6781.9     1461.0  -4.642
-## C.NeighborhoodWest of Twin Peaks              36456.0     1171.4  31.121
-## C.NeighborhoodWestern Addition                25134.5     1371.6  18.325
-##                                              Pr(>|t|)    
-## (Intercept)                                   < 2e-16 ***
-## C.NeighborhoodBernal Heights                  < 2e-16 ***
-## C.NeighborhoodCastro/Upper Market             < 2e-16 ***
-## C.NeighborhoodChinatown                      0.067793 .  
-## C.NeighborhoodExcelsior                      0.634533    
-## C.NeighborhoodFinancial District/South Beach  < 2e-16 ***
-## C.NeighborhoodGlen Park                       < 2e-16 ***
-## C.NeighborhoodGolden Gate Park                < 2e-16 ***
-## C.NeighborhoodHaight Ashbury                  < 2e-16 ***
-## C.NeighborhoodHayes Valley                    < 2e-16 ***
-## C.NeighborhoodInner Richmond                  < 2e-16 ***
-## C.NeighborhoodInner Sunset                    < 2e-16 ***
-## C.NeighborhoodJapantown                       < 2e-16 ***
-## C.NeighborhoodLakeshore                      0.152106    
-## C.NeighborhoodLincoln Park                   0.288595    
-## C.NeighborhoodLone Mountain/USF               < 2e-16 ***
-## C.NeighborhoodMarina                          < 2e-16 ***
-## C.NeighborhoodMcLaren Park                   0.005133 ** 
-## C.NeighborhoodMission                         < 2e-16 ***
-## C.NeighborhoodMission Bay                     < 2e-16 ***
-## C.NeighborhoodNob Hill                        < 2e-16 ***
-## C.NeighborhoodNoe Valley                      < 2e-16 ***
-## C.NeighborhoodNorth Beach                     < 2e-16 ***
-## C.NeighborhoodOceanview/Merced/Ingleside     0.073135 .  
-## C.NeighborhoodOuter Mission                  0.000244 ***
-## C.NeighborhoodOuter Richmond                  < 2e-16 ***
-## C.NeighborhoodPacific Heights                 < 2e-16 ***
-## C.NeighborhoodPortola                        0.040914 *  
-## C.NeighborhoodPotrero Hill                    < 2e-16 ***
-## C.NeighborhoodPresidio                       1.44e-15 ***
-## C.NeighborhoodPresidio Heights                < 2e-16 ***
-## C.NeighborhoodRussian Hill                    < 2e-16 ***
-## C.NeighborhoodSeacliff                        < 2e-16 ***
-## C.NeighborhoodSouth of Market                 < 2e-16 ***
-## C.NeighborhoodSunset/Parkside                 < 2e-16 ***
-## C.NeighborhoodTenderloin                     0.223787    
-## C.NeighborhoodTreasure Island                0.231263    
-## C.NeighborhoodTwin Peaks                      < 2e-16 ***
-## C.NeighborhoodVisitacion Valley              3.54e-06 ***
-## C.NeighborhoodWest of Twin Peaks              < 2e-16 ***
-## C.NeighborhoodWestern Addition                < 2e-16 ***
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## Residual standard error: 12100 on 4943 degrees of freedom
-## Multiple R-squared:  0.7415,	Adjusted R-squared:  0.7394 
-## F-statistic: 354.5 on 40 and 4943 DF,  p-value: < 2.2e-16
+## [1] "Multiple R-squared (i.e. variance explained): 0.74149"
+```
+
++ *And here are the top 10 neighborhoods most positively predictive of income...*
+
+
+```
+##                                Estimate Std. Error   t value      Pr(>|t|)
+## Golden Gate Park               85225.02   2068.488 41.201593 2.936924e-319
+## Seacliff                       84225.02   3566.680 23.614403 6.571842e-117
+## Pacific Heights                65011.98   1437.634 45.221502  0.000000e+00
+## Marina                         62316.04   1499.338 41.562364  0.000000e+00
+## Financial District/South Beach 62135.80   1242.026 50.027772  0.000000e+00
+## Castro/Upper Market            57678.66   1145.931 50.333468  0.000000e+00
+## Presidio Heights               56319.33   2092.221 26.918447 4.700468e-149
+## Presidio                       56229.02   7021.798  8.007781  1.444625e-15
+## Potrero Hill                   53914.74   1590.918 33.889070 1.493178e-226
+## Noe Valley                     53703.74   1542.327 34.819954 8.977782e-238
 ```
 
 + Category: *Slowly but surely, it's coming.*
@@ -325,7 +294,7 @@ Finally, on the matter of sample sizes per statistical test, where necessary or 
 
 + The vast majority of 311 request locations belong to Census tracts with household income levels below $100k/year.
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
 
 **3. How are 311 request resolution times distributed across Census tract income levels?**
 
@@ -336,10 +305,16 @@ Finally, on the matter of sample sizes per statistical test, where necessary or 
 
 #### Public Policy
 
+Overall, there are two ways one can view the public policy insights and implications... 
+
 #### Operations
 
-#### Product Opportunities
+It appears 311's operations can make some respectable efficiency gains from the insights above. Although the picture for predicting which kinds of cases might ultimately become _invalid_ is murky, at least in practical terms, the picture for which cases might ultimately get _transferred_ is reasonably clear.
+
+**Product Opportunities**
 
 #### Future Research
+
+
 
 ### Appendix
