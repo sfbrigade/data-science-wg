@@ -14,7 +14,7 @@ In pursuing the above, we humbly hope that CfSF's dedicated project groups come 
 ### Administration
 
 Team Leads: [Jude Calvillo](http://linkd.in/1BGeytb) and [Sanat Moningi](http://bit.ly/1PFurlp)  
-Lead Data Scientist: [Matthew Pancia](http://bit.ly/1PFuA8k)  
+Lead Data Scientist: [Rocio Ng, Ph.D.](https://goo.gl/WxCdSt)  
 Website: [datascience.codeforsanfrancisco.org](http://datascience.codeforsanfrancisco.org)  
 Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wiki)  
 
@@ -22,10 +22,9 @@ Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wi
 
 Here's what we're currently working on, mostly with gov't/org partners, but as mentioned above, we're also eager to work with -or inspire- dedicated project groups.
 
-+ [U.S. Dept. of Transportation Hazmat Incident Prediction and Anomaly Detection >>](https://github.com/bayeshack2016/cfsf-datasci_dot-hazmat)
 + [City of SF Planning: Development Pipeline Report >>](https://github.com/thfield/sf-planning-pipeline-report)
-+ [City of SF 311 Case Data Analysis >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/SF_311_Data-Analysis)
 + [Interactive visualization of SF's building emissions and energy use >>](https://github.com/smoningi/SF-Environment-Benchmark)
++ [Friends of the Urban Forest: Prelim Analyses and Visualizations >>](https://github.com/sfbrigade/street-tree-viz)
 + [City of SF Budget Visualization >>](https://github.com/sameerank/sf-budget-visualization)
 + [Predicting Relative Risk of Fire in SF's Buildings >>](https://github.com/bnlcas/SF_firerisk)
 + [SF OpenData Search Analytics for Improving UX >>](https://github.com/sfbrigade/open-data-search)
@@ -34,6 +33,10 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 
 ### Recent Past Initiatives
 
++ [U.S. Dept. of Transportation Hazmat Incident Prediction and Anomaly Detection >>](https://github.com/bayeshack2016/cfsf-datasci_dot-hazmat)
+    - Status = Completed but working w/DoT to improve resolution and expand functionality  
++ [City of SF 311 Case Data Analysis >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/SF_311_Data-Analysis)
+    - Status = Completed but culling together numerous individual analyses for a final, formal report. As well, we're adding 311's newly requested analyses of transferred cases.
 + [ParkSafe GIS Coordinate Realignment (w/street paths; for parking applications) >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Park-Safe_GIS-Solution)
     - Status = Completed
 + [SF Hip Data Aggregation (for future liquor license visualization) >>](https://github.com/davidrs/sfhip-map)
@@ -42,7 +45,7 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
     - Status = On hold until further notice
 
 
-### Recent Happenings: As of June 29, 2016
+### Recent Happenings: Visit our Website
 
 For the latest news and insights from the Data Science Working Group, we invite you to visit our new website, at [datascience.codeforsanfrancisco.org](http://datascience.codeforsanfrancisco.org/).
 
