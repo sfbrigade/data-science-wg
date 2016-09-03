@@ -16,7 +16,7 @@
 
 We've recently finished our statistical tests and presented the answers to our research questions to SF's 311 Deputy Director and Chief Data Officer, although this resulted in having to revisit our tests for predicting cases that would get transferred. Thus, we're revisiting those tests while moving on to reporting, which we hope to finish as quickly as possible.
 
-+ [**Click to view our early exploratory analyses (visuals, summary stats, etc) >>**](/Exploratory_Analyses/)
++ [**Click to view our early exploratory analyses (visuals, summary stats, etc) >>**](https://git.io/viYWh)  
   
 
 ### Table of Contents (click to jump)
@@ -80,6 +80,9 @@ Finally, on the matter of sample sizes per statistical test, where necessary or 
 ***
 
 
+```
+## Error in library(stargazer): there is no package called 'stargazer'
+```
 
 ### Research Questions
 
