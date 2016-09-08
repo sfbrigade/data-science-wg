@@ -22,8 +22,8 @@ Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wi
 
 Here's what we're currently working on, mostly with gov't/org partners, but as mentioned above, we're also eager to work with -or inspire- dedicated project groups.
 
-+ [City of SF Planning: Development Pipeline Report >>](https://github.com/thfield/sf-planning-pipeline-report)
-+ [Interactive visualization of SF's building emissions and energy use >>](https://github.com/smoningi/SF-Environment-Benchmark)
++ [City of SF Planning: Development Pipeline Report >>](https://github.com/sfbrigade/datasci-housing-pipeline)
++ [Interactive visualization of SF's building emissions and energy use >>](https://github.com/sfbrigade/datasci-SF-Environment-Benchmark)
 + [Friends of the Urban Forest: Prelim Analyses and Visualizations >>](https://github.com/sfbrigade/street-tree-viz)
 + [City of SF Budget Visualization >>](https://github.com/sameerank/sf-budget-visualization)
 + [Predicting Relative Risk of Fire in SF's Buildings >>](https://github.com/bnlcas/SF_firerisk)
@@ -50,6 +50,3 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 For the latest news and insights from the Data Science Working Group, we invite you to visit our new website, at [datascience.codeforsanfrancisco.org](http://datascience.codeforsanfrancisco.org/).
 
 [![](dswg_site-screenshot.jpg)](http://datascience.codeforsanfrancisco.org/)
-
-
-
