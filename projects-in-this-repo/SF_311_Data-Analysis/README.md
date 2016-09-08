@@ -12,7 +12,7 @@
 + [Matthew Mollison, Ph.D.](http://bit.ly/1PPZXSa)
 + [Hannah Burak](http://bit.ly/1U7D13N)
 
-### Current Status: June 1, 2016
+### Current Status: July 1, 2016
 
 We've recently finished our statistical tests and presented the answers to our research questions to SF's 311 Deputy Director and Chief Data Officer, although this resulted in having to revisit our tests for predicting cases that would get transferred. Thus, we're revisiting those tests while moving on to reporting, which we hope to finish as quickly as possible.
 
@@ -21,28 +21,28 @@ We've recently finished our statistical tests and presented the answers to our r
 
 ### Table of Contents (click to jump)
 
-+ [Introduction][]
-+ [Literature Review][]
-+ [Methodology][]
++ [Introduction](#Intro)
++ [Literature Review](#Literature Review)
++ [Methodology](#Methodology)
     - Data Sources
-+ [Research Questions][]
++ [Research Questions](#Research Questions)
     - Operational Concerns
     - Equity Concerns
-+ [Conclusion / Implications][]
++ [Conclusion / Implications](#Conclusion)
     - Public Policy
     - Operations
     - Future Research
-+ [Appendix][]  
++ [Appendix](#Appendix)  
 
 
-### Introduction: It's Coming
+### <a name="Intro">Introduction: It's Coming</a>
 
 + Intro w/impetus.
 + Acknowledgements.
 
 ***
 
-### Literature Review
+### <a name="Literature Review">Literature Review</a>
 
 As a critical connection between municipal resources and needs, 311 call centers have become a vital component of municipal operations for large cities. They also provide a wealth of information on municipal needs, operations, and resources across the urban landscape. The opportunity to delve into this rich data and retrieve actionable insights has already been acted upon by several cities.  
 
@@ -59,7 +59,7 @@ Beyond describing human behavior, some cities have taken the next step in turnin
 
 ***
 
-### Methodology
+### <a name="Methodology">Methodology</a>
 
 Informed and inspired by its [exploratory analyses](http://bit.ly/29vOYfi), the Data Science Working Group sought to answer questions pertaining to 311's operational concerns, as well as questions the public might have over the City's equitable treatment of cases, by type and demographic association or deduction. To that end, although the DSWG was able to secure full and filtered datasets on 311 cases, using [San Francisco's celebrated OpenData portal and APIs](https://data.sfgov.org/), our demographic data and the true nature of its association with cases can, at times, result in one or both of the following interpretive limitations:  
 
@@ -80,11 +80,8 @@ Finally, on the matter of sample sizes per statistical test, where necessary or 
 ***
 
 
-```
-## Error in library(stargazer): there is no package called 'stargazer'
-```
 
-### Research Questions
+### <a name="Research Questions">Research Questions</a>
 
 #### Operational Concerns
 These were questions directly posed by SF City gov't leadership or inspired by conversations with them.
@@ -110,13 +107,19 @@ These were questions directly posed by SF City gov't leadership or inspired by c
   
 **3. Can we fairly accurately forecast the frequency of one or more request categories from their apparent seasonality?**  
 
-+ *Yes. More details coming. In the meantime, here are some early plots. The first is a seasonal chart exploring monthly seasonality, between years, of a specific request type. The second is a seasonal decomposition, across years, for a broader request category (Street and Sidewalk Cleaning).*
++ *Yes. We begun this analysis by simply looking for monthly patterns in the data, per request type, which you can see below, in the case of abandoned vehicle requests.*  
+
 ![](figure/season_exploration.png)
+
++ *Thereafter, we went into full-on seasonal decomposition, across years, for each request category, as such a method helps us extract the detected season (is there a recurring chronological pattern?), detected trend (is the incidence rising or falling?), and residuals within the data (what's outside of the season and trend?). In the example below, we see the seasonal decomposition for Street and Sidewalk Cleaning.*
+
 ![](figure/311_seasonal-decomp.png)
+
++ *And the above is interesting because, with the residuals, we are able to start looking for truely anomalous data points...*  
 
 **4. Can we detect anomalies in frequency of one or more request categories, particularly per geographic location?**  
 
-+ Yes, we can. If one looks at the seasonal decomposition above, particularly the extracted remainder, one can begin to see which observations might be anomalous to such seasonally sensitive data. One can then tackle anomaly detection accordingly, via seasonal decomposition + generalized *Extreme Studentized Deviate* test (i.e. *Rosner test* for outliers) upon the remainder, ...or one can simply invoke [Twitter's convenient new anomaly detection package](https://github.com/twitter/AnomalyDetection), which employs the above while also offering optional piecewise appromixation.  
++ Yes, we can. If one looks at the residuals above, one can begin to see which observations might be anomalous to such seasonally sensitive data. One can then tackle anomaly detection accordingly, via generalized *Extreme Studentized Deviate* test (i.e. *Rosner test* for outliers) upon these outliers, ...or one can simply invoke [Twitter's convenient new anomaly detection package](https://github.com/twitter/AnomalyDetection), which employs the above while also offering optional piecewise appromixation.  
 
     - The following plot reveals those days that exhibited an anomolous frequency of requests for Street and Sidewalk Cleaning (*more on this later*).
 ![](figure/311_anomaly-detection.png)
@@ -131,7 +134,7 @@ These were questions directly posed by SF City gov't leadership or inspired by c
 
 **1. Which features of cases (location, source, caselength, category) are good predictors of income?**  
 
-+ *Case length: Notably, case length does not predict the request location's median income. Put another way, the City appears to resolve cases across areas (Census Tracts) of varying income levels in roughly the same amount of time.*
++ *Case length: Notably, case length does not predict the request location's median income. Put another way, the City appears to resolve cases across areas (Census Tracts) of varying income levels in roughly the same amount of time, which actually answers our question #3.*
     
 
 ```
@@ -199,7 +202,7 @@ These were questions directly posed by SF City gov't leadership or inspired by c
 ## [1] "Multiple R-squared (i.e. variance explained): 0.74149"
 ```
 
-+ *And here are the top 10 neighborhoods most positively predictive of income...*
++ *And here are the top 10 neighborhoods most positively predictive of income, in descending order.*
 
 
 ```
@@ -295,16 +298,40 @@ These were questions directly posed by SF City gov't leadership or inspired by c
   
 **2. How is 311 request volume distributed across Census tract income levels?**  
 
-+ The vast majority of 311 request locations belong to Census tracts with household income levels below $100k/year.
++ *The vast majority of 311 request locations belong to Census tracts with household income levels below $100k/year.*
 
 ![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
 
-**3. How are 311 request resolution times distributed across Census tract income levels?**
+**3. How are 311 request resolution times distributed across Census tract income levels?**  
 
++ *This was effectively answered in our first regression (q. 1), on case length, but just to reiterate: the City appears to resolve cases across areas (Census Tracts) of varying income levels in roughly the same amount of time, which actually answers our question #3.*
+    
+
+```
+## 
+## Call:
+## lm(formula = pc_inc2014 ~ caselength, data = income)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -41432 -16024  -2958  14219  84966 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  4.967e+04  3.548e+02 139.983   <2e-16 ***
+## caselength  -4.577e-02  1.210e-01  -0.378    0.705    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 23690 on 4760 degrees of freedom
+##   (222 observations deleted due to missingness)
+## Multiple R-squared:  3.008e-05,	Adjusted R-squared:  -0.00018 
+## F-statistic: 0.1432 on 1 and 4760 DF,  p-value: 0.7052
+```
 
 **4. Is there a correlation between resolution time and percent (%) any racial or ethnic population?**
 
-### Conclusion / Implications
+### <a name="Conclusion">Conclusion / Implications</a>
 
 #### Public Policy
 
@@ -320,4 +347,4 @@ It appears 311's operations can make some respectable efficiency gains from the 
 
 
 
-### Appendix
+### <a name="Appendix">Appendix</a>
