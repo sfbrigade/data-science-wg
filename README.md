@@ -24,13 +24,13 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 
 + [City of SF Planning: Development Pipeline Report >>](https://github.com/sfbrigade/datasci-housing-pipeline)
 + [Interactive visualization of SF's building emissions and energy use >>](https://github.com/sfbrigade/datasci-SF-Environment-Benchmark)
-+ [Friends of the Urban Forest: Prelim Analyses and Visualizations >>](https://github.com/sfbrigade/street-tree-viz)
++ [Friends of the Urban Forest: Prelim Analyses and Visualizations >>](https://github.com/sfbrigade/datasci-urban-forest)
 + [Predicting Relative Risk of Fire in SF's Buildings >>](https://github.com/bnlcas/SF_firerisk)
-+ [SF OpenData Search Analytics for Improving UX >>](https://github.com/sfbrigade/open-data-search)
++ [SF OpenData Search Analytics for Improving UX >>](https://github.com/sfbrigade/datasci-open-data-search)
 + [CA Dept. of Justice OpenJustice Hypothesis Testing and Predictive Modeling >>](https://github.com/sfbrigade/CA_DOJ_OpenJustice)
-+ [U.S. Dept. of Transportation Traffic Fatality Analyses >>](https://github.com/sfbrigade/dswg-dot-fars)  
-+ [SF Homelessness Analysis Project (more info coming) >>](https://github.com/sfbrigade/sfhomelessproject)
-
++ [U.S. Dept. of Transportation Traffic Fatality Analyses >>](https://github.com/sfbrigade/datasci-dot-fars)  
++ [SF Homelessness Analysis Project (more info coming) >>](https://github.com/sfbrigade/datasci-sf-homeless-project)
++ [Small Business Association >>](https://github.com/sfbrigade/datasci-sba)
 
 ### Recent Past Initiatives
 
