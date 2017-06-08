@@ -22,7 +22,7 @@ Ideally, a DSWG Project:
 ## Slack
 
 - create a slack channel of the form `#datasci-{projectname}`
-
+- in the "About" section, set the channel's purpose and include a link to the project's Github page
 
 ## Webpage
 
