@@ -5,6 +5,9 @@ This project is a part of the [Data Science Working Group](http://datascience.co
 ## About
 The purpose of this project is ________.
 
+### Partners
+Our community/government partners include the Department of Blahblahblah, etc, etc.
+
 ### Scope
 Include [Inferential Statistics, Machine Learning, Data Visualization, Predictive Modeling, etc]
 
@@ -14,7 +17,7 @@ Include [R, Python, D3, PostGres, MySql, Pandas, HTML, JavaScript, etc]
 
 ## Contact
 If you haven't joined the SF Brigade Slack, [you can do that here](http://c4sf.me/slack).  
-Our slack channel is #datasci-projectname
+Our slack channel is `#datasci-projectname`
 
 ### Members:
 - Firstname Lastname, @slack-handle
