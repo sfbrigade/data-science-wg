@@ -13,10 +13,11 @@ In pursuing the above, we humbly hope that CfSF's dedicated project groups come 
 
 ### Administration
 
-Team Leads: [Jude Calvillo](http://linkd.in/1BGeytb) and [Sanat Moningi](http://bit.ly/1PFurlp)  
-Lead Data Scientist: [Rocio Ng, Ph.D.](https://goo.gl/WxCdSt)  
+Team Leads: [Rocio Ng, Ph.D.](https://goo.gl/WxCdSt) and [Sanat Moningi](http://bit.ly/1PFurlp)  
+Lead Data Scientist:  Matt Mollison
 Website: [datascience.codeforsanfrancisco.org](http://datascience.codeforsanfrancisco.org)  
 Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wiki)  
+Group Email Contact: datascience[at]codeforsanfrancisco.org
 
 ### Current Initiatives
 
