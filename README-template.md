@@ -42,9 +42,9 @@ Include [R, Python, D3, PostGres, MySql, Pandas, HTML, JavaScript, etc]
 Team Leads: [First Name] [Last Name] (@slackHandle)
 
 |Name     |  Slack Handle   | 
-|---------|-----------------|
+|=========|=================|
 |John Doe | @johnDoe        |
-|         |                 |
+|Jane Doe  |     @janeDoe         |
 
 ## Contact
 * If you haven't joined the SF Brigade Slack, [you can do that here](http://c4sf.me/slack).  
