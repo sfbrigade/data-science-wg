@@ -42,7 +42,7 @@ Include [R, Python, D3, PostGres, MySql, Pandas, HTML, JavaScript, etc]
 Team Leads: [First Name] [Last Name] (@slackHandle)
 
 |Name     |  Slack Handle   | 
-|=========|=================|
+|---------|-----------------|
 |John Doe | @johnDoe        |
 |Jane Doe  |     @janeDoe         |
 
