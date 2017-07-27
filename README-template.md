@@ -3,10 +3,12 @@ This project is a part of the [Data Science Working Group](http://datascience.co
 
 
 ## About
-The purpose of this project is ________.
+### Slack Channel: #datasci-sba
+The purpose of this project is ________. [Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences]
 
-### Partners
-Our community/government partners include the Department of Blahblahblah, etc, etc.
+### Partner
+* [Name of Partner organization/Government department etc..]
+* Partner contact: [Name of Contact], [slack handle of contact if any]
 
 ### Scope
 Include [Inferential Statistics, Machine Learning, Data Visualization, Predictive Modeling, etc]
@@ -14,17 +16,12 @@ Include [Inferential Statistics, Machine Learning, Data Visualization, Predictiv
 ### Technologies
 Include [R, Python, D3, PostGres, MySql, Pandas, HTML, JavaScript, etc]
 
+### Project Description
+[Provide more detailed overview of the project]
 
 ## Contact
 If you haven't joined the SF Brigade Slack, [you can do that here](http://c4sf.me/slack).  
 Our slack channel is `#datasci-projectname`
-
-### Members:
-- Firstname Lastname, @slack-handle
-- Otherperson Otherpersonslastname, @theirslackhandle
-
-Firstname is our de facto team lead, contact him/her first with any questions.
-
 
 ## Getting Started
 
@@ -44,3 +41,13 @@ Firstname is our de facto team lead, contact him/her first with any questions.
 - data processing/cleaning
 - statistical modeling
 - writeup/reporting
+
+## Contributing DSWG Members
+
+Team Leads: [First Name] [Last Name] (@slackHandle)
+Feel free to contact team leads with any questions.
+
+|Name     |  Slack Handle   | 
+|---------|-----------------|
+|John Doe | @johnDoe        |
+|         |                 |
