@@ -3,7 +3,6 @@ This project is a part of the [Data Science Working Group](http://datascience.co
 
 
 ## About
-### Slack Channel: #datasci-sba
 The purpose of this project is ________. [Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences]
 
 ### Partner
@@ -18,10 +17,6 @@ Include [R, Python, D3, PostGres, MySql, Pandas, HTML, JavaScript, etc]
 
 ### Project Description
 [Provide more detailed overview of the project]
-
-## Contact
-If you haven't joined the SF Brigade Slack, [you can do that here](http://c4sf.me/slack).  
-Our slack channel is `#datasci-projectname`
 
 ## Getting Started
 
@@ -45,9 +40,13 @@ Our slack channel is `#datasci-projectname`
 ## Contributing DSWG Members
 
 Team Leads: [First Name] [Last Name] (@slackHandle)
-Feel free to contact team leads with any questions.
 
 |Name     |  Slack Handle   | 
 |---------|-----------------|
 |John Doe | @johnDoe        |
 |         |                 |
+
+## Contact
+* If you haven't joined the SF Brigade Slack, [you can do that here](http://c4sf.me/slack).  
+* Our slack channel is `#datasci-projectname`
+* Feel free to contact team leads with any questions or if you are interested in contributing!
