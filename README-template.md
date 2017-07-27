@@ -9,7 +9,7 @@ The purpose of this project is ________. [Describe the main goals of the project
 * [Name of Partner organization/Government department etc..]
 * Partner contact: [Name of Contact], [slack handle of contact if any]
 
-### Scope
+### Methods Used
 Include [Inferential Statistics, Machine Learning, Data Visualization, Predictive Modeling, etc]
 
 ### Technologies
