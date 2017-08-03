@@ -15,18 +15,14 @@ Include [Inferential Statistics, Machine Learning, Data Visualization, Predictiv
 ### Technologies
 Include [R, Python, D3, PostGres, MySql, Pandas, HTML, JavaScript, etc]
 
-### Project Description
-[Provide more detailed overview of the project]
+### Project Description/Methods
+[Provide more detailed overview of the project.  Include]
 
 ## Getting Started
 
-1. [Clone this repo](https://help.github.com/articles/cloning-a-repository/)
-1. Download the data
-1. Profit!
-
-### Data
-- data is being kept **here**
-- **here** are the scripts to run to do any data transformations
+1. Clone this repo, For help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)
+2. Data is being kept **here** (Link to repo folder containing raw data. If using proprietary data mention that here)
+3. **here** are the scripts to run to do any data transformations (Link to repo folder containing data processing links)
 
 
 ## Needs of this project
@@ -36,10 +32,13 @@ Include [R, Python, D3, PostGres, MySql, Pandas, HTML, JavaScript, etc]
 - data processing/cleaning
 - statistical modeling
 - writeup/reporting
+- etc. (be as specific as possible)
 
 ## Contributing DSWG Members
 
-Team Leads: [First Name] [Last Name] (@slackHandle)
+Team Leads (Contacts) : [First Name] [Last Name] (@slackHandle)
+
+#### Other Members:
 
 |Name     |  Slack Handle   | 
 |---------|-----------------|
