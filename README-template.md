@@ -11,6 +11,7 @@ The purpose of this project is ________. (Describe the main goals of the project
 ### Partner
 * [Name of Partner organization/Government department etc..]
 * Partner contact: [Name of Contact], [slack handle of contact if any]
+* If you do not have a partner leave this section out
 
 ### Methods Used
 * Inferential Statistics
