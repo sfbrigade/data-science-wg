@@ -26,7 +26,7 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 + [City of SF Planning: Development Pipeline Report >>](https://github.com/sfbrigade/datasci-housing-pipeline)
 + [Interactive visualization of SF's building emissions and energy use >>](https://github.com/sfbrigade/datasci-SF-Environment-Benchmark)
 + [Friends of the Urban Forest: Prelim Analyses and Visualizations >>](https://github.com/sfbrigade/datasci-urban-forest)
-+ [Predicting Relative Risk of Fire in SF's Buildings >>](https://github.com/bnlcas/SF_firerisk)
++ [Predicting Relative Risk of Fire in SF's Buildings >>](https://github.com/sfbrigade/datasci-firerisk/)
 + [SF OpenData Search Analytics for Improving UX >>](https://github.com/sfbrigade/datasci-open-data-search)
 + [CA Dept. of Justice OpenJustice Hypothesis Testing and Predictive Modeling >>](https://github.com/sfbrigade/CA_DOJ_OpenJustice)
 + [U.S. Dept. of Transportation Traffic Fatality Analyses >>](https://github.com/sfbrigade/datasci-dot-fars)  
