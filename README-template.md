@@ -63,14 +63,14 @@ The purpose of this project is ________. (Describe the main goals of the project
 
 ## Contributing DSWG Members
 
-**Team Leads (Contacts) : [First Name] [Last Name] (@slackHandle)**
+**Team Leads (Contacts) : [Full Name](https://github.com/[github handle])(@slackHandle)**
 
 #### Other Members:
 
 |Name     |  Slack Handle   | 
 |---------|-----------------|
-|John Doe | @johnDoe        |
-|Jane Doe |     @janeDoe    |
+|[Full Name](https://github.com/[github handle])| @johnDoe        |
+|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
 
 ## Contact
 * If you haven't joined the SF Brigade Slack, [you can do that here](http://c4sf.me/slack).  
