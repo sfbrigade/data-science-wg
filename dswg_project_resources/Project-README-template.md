@@ -57,9 +57,11 @@ The purpose of this project is ________. (Describe the main goals of the project
 
 5. Follow setup [instructions](Link to file)
 
-## Featured Notebooks/Analysis
+## Featured Notebooks/Analysis/Deliverables
 * [Notebook/Markdown/Slide Deck Title](link)
 * [Notebook/Markdown/Slide DeckTitle](link)
+* [Blog Post](link)
+
 
 ## Contributing DSWG Members
 
