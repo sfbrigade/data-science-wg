@@ -1,5 +1,5 @@
 # Introduction
-At Code for San Francisco we host a PostgreSQL server on Microsoft Azure. We host this under the Resource Group "sba" which is only because the first project to use a PostgreSQL server was the (Small Business Administration Project)[https://github.com/sfbrigade/datasci-sba].
+At Code for San Francisco we host a PostgreSQL server on Microsoft Azure. We host this under the Resource Group "sba" which is only because the first project to use a PostgreSQL server was the [Small Business Administration Project](https://github.com/sfbrigade/datasci-sba).
 
 This doc will document some commands to make setting up new roles and databases easier.
 
@@ -42,3 +42,50 @@ We should have one database and one main role. Once you have set up the database
 GRANT ALL PRIVILEGES ON DATABASE datasbasename to username;
 ```
 
+## Setting up a Read Only User
+Setting up a Read Only User is a great/low effort way to share data with others while maintaining security of the database (more often than not we're just trying to protect ourselves from accidental writes to the DB!). Note that as of October 2017, it is not possible to automatically grant read access to all schemas and **all future schemas**, you will need to do this manually for each schema. In the example below, I am granting read only access to two schemas: `public` and `data_ingest`. If you were to add new schemas in the future you would need to `GRANT USAGE` and `GRANT SELECT ON ALL TABLES IN SCHEMA` for that particular schema.
+
+First, follow the steps above to create a new user. In the example below, I am using `readonly` as the user.
+
+```
+-- Grant connect on database
+GRANT CONNECT ON DATABASE databasename to readonly;
+
+-- Connect to [databasename] on local database cluster
+\c databasename 
+
+-- Grant Usage to schemas
+GRANT USAGE ON SCHEMA public TO readonly;
+GRANT USAGE ON SCHEMA data_ingest TO readonly;
+
+-- Grant access to future tables
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO readonly;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO readonly;
+ALTER DEFAULT PRIVILEGES IN SCHEMA data_ingest GRANT SELECT ON TABLES to readonly;
+ALTER DEFAULT PRIVILEGES IN SCHEMA data_ingest GRANT ALL ON TABLES TO readonly;
+
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO readonly;
+GRANT SELECT ON ALL SEQUENCES IN SCHEMA public TO readonly;
+GRANT SELECT ON ALL TABLES IN SCHEMA data_ingest TO readonly;
+GRANT SELECT ON ALL SEQUENCES IN SCHEMA data_ingest TO readonly;
+
+
+
+```
+
+-- repeat code below for each database:
+
+GRANT CONNECT ON DATABASE foo to readonly;
+\c foo
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO readonly; --- this grants privileges on new tables generated in new database "foo"
+GRANT USAGE ON SCHEMA public to readonly; 
+GRANT SELECT ON ALL SEQUENCES IN SCHEMA public TO readonly;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO readonly;
+
+After creating a role, you can (optionally) create different users with the same `readonly` role. For example
+
+```
+-- Create a final user with password
+CREATE USER otherreadonlyuser WITH PASSWORD 'secret';
+GRANT readonly TO otherreadonlyuser;
+```
