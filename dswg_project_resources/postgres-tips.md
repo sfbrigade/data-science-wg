@@ -68,19 +68,7 @@ GRANT SELECT ON ALL TABLES IN SCHEMA public TO readonly;
 GRANT SELECT ON ALL SEQUENCES IN SCHEMA public TO readonly;
 GRANT SELECT ON ALL TABLES IN SCHEMA data_ingest TO readonly;
 GRANT SELECT ON ALL SEQUENCES IN SCHEMA data_ingest TO readonly;
-
-
-
 ```
-
--- repeat code below for each database:
-
-GRANT CONNECT ON DATABASE foo to readonly;
-\c foo
-ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO readonly; --- this grants privileges on new tables generated in new database "foo"
-GRANT USAGE ON SCHEMA public to readonly; 
-GRANT SELECT ON ALL SEQUENCES IN SCHEMA public TO readonly;
-GRANT SELECT ON ALL TABLES IN SCHEMA public TO readonly;
 
 After creating a role, you can (optionally) create different users with the same `readonly` role. For example
 
@@ -89,3 +77,24 @@ After creating a role, you can (optionally) create different users with the same
 CREATE USER otherreadonlyuser WITH PASSWORD 'secret';
 GRANT readonly TO otherreadonlyuser;
 ```
+
+Note that if you are running into issues even after running the above commands, make sure you are logged in as the user who is the owner of the particular schema. This will likely be the main user given to the project that was done by using:
+
+```
+GRANT ALL PRIVILEGES ON DATABASE datasbasename to username;
+```
+
+To list all schemas and the owners you can type `\dn` into the psql console. For example:
+
+```
+datascicongressionaldata=> \dn
+             List of schemas
+     Name      |          Owner
+---------------+--------------------------
+ data_ingest   | datascicongressionaldata
+ public        | azure_superuser
+ stg_analytics | datascicongressionaldata
+ trg_analytics | datascicongressionaldata
+(4 rows)
+```
+
