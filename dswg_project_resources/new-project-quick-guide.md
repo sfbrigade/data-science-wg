@@ -16,6 +16,7 @@ Ideally, a DSWG Project:
 
 - Setup a github repo on sfbrigade's github with the form `github.com/sfbrigade/datasci-{projectname}`
 - create a `README.md` file using the template in this repo [README-template.md](https://github.com/sfbrigade/data-science-wg/blob/master/dswg_project_resources/Project-README-template.md)
+- Create a Pull Request Template using the template in this repo [PULL_REQUEST_TEMPLATE.md](../PULL_REQUEST_TEMPLATE.md)
 - the most important features here are "current needs" and "contact" so that new members can learn more
 
 
