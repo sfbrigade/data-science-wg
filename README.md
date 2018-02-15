@@ -23,7 +23,7 @@ Group Email Contact: datascience[at]codeforsanfrancisco.org
 
 Here's what we're currently working on, mostly with gov't/org partners, but as mentioned above, we're also eager to work with -or inspire- dedicated project groups.
 
-+ [City of SF Planning: Development Pipeline Report >>](https://github.com/sfbrigade/datasci-housing-pipeline)
++ [The Science of Housing: Impact of Planning Policy on the Housing Crisis](https://github.com/sfbrigade/datasci-housing-pipeline)
 + [Interactive visualization of SF's building emissions and energy use >>](https://github.com/sfbrigade/datasci-SF-Environment-Benchmark)
 + [Friends of the Urban Forest: Prelim Analyses and Visualizations >>](https://github.com/sfbrigade/datasci-urban-forest)
 + [Predicting Relative Risk of Fire in SF's Buildings >>](https://github.com/sfbrigade/datasci-firerisk/)
