@@ -15,7 +15,6 @@ In pursuing the above, we humbly hope that CfSF's dedicated project groups come 
 
 Team Leads: [Rocio Ng, Ph.D.](https://goo.gl/WxCdSt) and [Vincent La](https://www.linkedin.com/in/vincentla/)  
 Lead Data Scientist:  Matt Mollison  
-Website: [datascience.codeforsanfrancisco.org](http://datascience.codeforsanfrancisco.org)  
 Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wiki)   
 Group Email Contact: datascience[at]codeforsanfrancisco.org
 
@@ -48,9 +47,3 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 + [City of SF Budget Visualization >>](https://github.com/sameerank/sf-budget-visualization)
     - Status = Completed
 
-
-### Recent Happenings: Visit our Website
-
-For the latest news and insights from the Data Science Working Group, we invite you to visit our new website, at [datascience.codeforsanfrancisco.org](http://datascience.codeforsanfrancisco.org/).
-
-[![](dswg_site-screenshot.jpg)](http://datascience.codeforsanfrancisco.org/)
