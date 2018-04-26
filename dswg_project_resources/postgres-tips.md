@@ -17,7 +17,7 @@ After logging into the PostgreSQL server, use `\l` to view a list of all existin
 Then, to create the database:
 
 ```
-create database YOURDATABASENAME
+create database YOURDATABASENAME;
 ```
 
 I would suggest not using any special characters or spaces as it will be very annoying to have to escape those in the future.
