@@ -98,3 +98,33 @@ datascicongressionaldata=> \dn
 (4 rows)
 ```
 
+## Creating a Staging Database
+There will be times where you will want to create a copy of a production database to create a staging database. This will allow members to push changes to a live database but not affect your "production" database. To do this start by copying the staging database:
+
+```
+CREATE DATABASE newdb WITH TEMPLATE originaldb;
+```
+
+You will want to create a new user/role first as described above in this doc. Preferably the name will indicate a `stg` name.
+
+When you do this, you will next have to change the owner:
+
+```
+alter database stgdatascicongressionaldata owner to stgdatascicongressionaldata;
+```
+
+```
+ALTER SCHEMA data_ingest OWNER TO stgdatascicongressionaldata;
+```
+
+```
+reassign owned by datascicongressionaldata to stgdatascicongressionaldata;
+```
+
+In order to do the above you may have to assign the stg role to the original role
+
+```
+grant stgdatascicongressionaldata to datascicongressionaldata
+```
+
+
