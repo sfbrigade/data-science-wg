@@ -1,21 +1,27 @@
 # General Guidelines
 
-Ideally, a DSWG Project:
-- has a community or government partner within a few weeks
-- has a team lead (or several)
-- has a presence on github, slack, and the website
-- is working towards answering a question that can be summarized as some sort of deliverable, eg:
+Ideally, a DSWG Project has the following:
+- Team lead(s)
+- Project Manager
+- Github Repo
+- slack
+
+- Intent towards answering a set of questions that can be summarized as some sort of deliverable, eg:
     - a workbook
     - a report
     - a presentation
     - a website
     - a blog posting
-
+    
+Nice to haves:
+- has a community or government partner within a few weeks
+- Blog posts describing major project milestones on the website
 
 ## Github
 
 - Setup a github repo on sfbrigade's github with the form `github.com/sfbrigade/datasci-{projectname}`
-- create a `README.md` file using the template in this repo [README-template.md](https://github.com/sfbrigade/data-science-wg/blob/master/dswg_project_resources/Project-README-template.md)
+    - If you need help reach out to one of the DSWG Leads 
+- Create a `README.md` file using the template in this repo [README-template.md](https://github.com/sfbrigade/data-science-wg/blob/master/dswg_project_resources/Project-README-template.md)
 - Create a Pull Request Template using the template in this repo [PULL_REQUEST_TEMPLATE.md](../PULL_REQUEST_TEMPLATE.md)
 - the most important features here are "current needs" and "contact" so that new members can learn more
 
