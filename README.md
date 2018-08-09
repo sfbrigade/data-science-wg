@@ -29,7 +29,7 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 + [SF OpenData Search Analytics for Improving UX >>](https://github.com/sfbrigade/datasci-open-data-search)
 + [CA Dept. of Justice OpenJustice Hypothesis Testing and Predictive Modeling >>](https://github.com/sfbrigade/CA_DOJ_OpenJustice)
 + [U.S. Dept. of Transportation Traffic Fatality Analyses >>](https://github.com/sfbrigade/datasci-dot-fars)  
-+ [SF Homelessness Analysis Project (more info coming) >>](https://github.com/sfbrigade/datasci-sf-homeless-project)
++ [Northern CA Homelessness Analysis Project  >>](https://github.com/sfbrigade/datasci-sf-homeless-project)
 + [Small Business Association >>](https://github.com/sfbrigade/datasci-sba) 
 + [Campaign Finance Project](https://github.com/sfbrigade/datasci-congressional-data)
 
