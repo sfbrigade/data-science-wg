@@ -14,9 +14,9 @@ In pursuing the above, we humbly hope that CfSF's dedicated project groups come 
 ### Administration
 
 Team Leads: [Rocio Ng, Ph.D.](https://goo.gl/WxCdSt) and [Vincent La](https://www.linkedin.com/in/vincentla/)  
-Lead Data Scientist:  Matt Mollison  
 Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wiki)   
 Group Email Contact: datascience[at]codeforsanfrancisco.org
+If you are interested in volunteering to generallhy help the group as a whole outside of project please reach out to one of the team leads.
 
 ### Current Initiatives
 
