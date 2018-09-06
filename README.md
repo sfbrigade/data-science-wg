@@ -39,10 +39,8 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 + [CA Dept. of Justice OpenJustice Hypothesis Testing and Predictive Modeling >>](https://github.com/sfbrigade/CA_DOJ_OpenJustice)
 + [U.S. Dept. of Transportation Hazmat Incident Prediction and Anomaly Detection >>](https://github.com/bayeshack2016/cfsf-datasci_dot-hazmat)
 + [City of SF 311 Case Data Analysis >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/SF_311_Data-Analysis)
-+ [ParkSafe GIS Coordinate Realignment (w/street paths; for parking applications) >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Park-Safe_GIS-Solution)
-    - Status = Completed
-+ [SF Hip Data Aggregation (for future liquor license visualization) >>](https://github.com/davidrs/sfhip-map)
-    - Status = Completed
 + [City of SF Budget Visualization >>](https://github.com/sameerank/sf-budget-visualization)
-    - Status = Completed
++ [ParkSafe GIS Coordinate Realignment (w/street paths; for parking applications) >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Park-Safe_GIS-Solution)
++ [SF Hip Data Aggregation (for future liquor license visualization) >>](https://github.com/davidrs/sfhip-map)
+
 
