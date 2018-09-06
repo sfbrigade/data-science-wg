@@ -28,19 +28,18 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 
 ### Projects On Hold
 + [SF OpenData Search Analytics for Improving UX >>](https://github.com/sfbrigade/datasci-open-data-search)
-+ [U.S. Dept. of Transportation Traffic Fatality Analyses >>](https://github.com/sfbrigade/datasci-dot-fars)  
-+ [Northern CA Homelessness Analysis Project  >>](https://github.com/sfbrigade/datasci-sf-homeless-project)
++ [CTA-NorCal Homeless Program Outcomes Analysis >>](https://github.com/sfbrigade/datasci-sf-homeless-project)
 + [Interactive visualization of SF's building emissions and energy use >>](https://github.com/sfbrigade/datasci-SF-Environment-Benchmark)
 + [The Science of Housing: Impact of Planning Policy on the Housing Crisis](https://github.com/sfbrigade/datasci-housing-pipeline)
 
 
 ### Past Projects
+
 + [Friends of the Urban Forest: Analyses and Visualizations >>](https://github.com/sfbrigade/datasci-urban-forest)
 + [CA Dept. of Justice OpenJustice Hypothesis Testing and Predictive Modeling >>](https://github.com/sfbrigade/CA_DOJ_OpenJustice)
 + [U.S. Dept. of Transportation Hazmat Incident Prediction and Anomaly Detection >>](https://github.com/bayeshack2016/cfsf-datasci_dot-hazmat)
 + [City of SF 311 Case Data Analysis >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/SF_311_Data-Analysis)
 + [City of SF Budget Visualization >>](https://github.com/sameerank/sf-budget-visualization)
-+ [ParkSafe GIS Coordinate Realignment (w/street paths; for parking applications) >>](https://github.com/sfbrigade/data-science-wg/tree/master/projects-in-this-repo/Park-Safe_GIS-Solution)
-+ [SF Hip Data Aggregation (for future liquor license visualization) >>](https://github.com/davidrs/sfhip-map)
++ [U.S. Dept. of Transportation Traffic Fatality Analyses >>](https://github.com/sfbrigade/datasci-dot-fars)  
 
 
