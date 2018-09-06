@@ -14,7 +14,7 @@ In pursuing the above, we humbly hope that CfSF's dedicated project groups come 
 ### Administration
 
 Team Leads: [Rocio Ng, Ph.D.](https://goo.gl/WxCdSt) and [Vincent La](https://www.linkedin.com/in/vincentla/)  
-Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wiki)   
+Wiki (resources): [DSWG Wiki](https://github.com/sfbrigade/data-science-wg/wiki)   
 Group Email Contact: datascience[at]codeforsanfrancisco.org
 If you are interested in volunteering to generallhy help the group as a whole outside of project please reach out to one of the team leads.
 
@@ -23,13 +23,13 @@ If you are interested in volunteering to generallhy help the group as a whole ou
 Here's what we're currently working on, mostly with gov't/org partners, but as mentioned above, we're also eager to work with -or inspire- dedicated project groups.
 
 + [Campaign Finance Project](https://github.com/sfbrigade/datasci-congressional-data)
-+ [Predicting Relative Risk of Fire in SF's Buildings >>](https://github.com/sfbrigade/datasci-firerisk/)
++ [Predicting Relative Risk of Fire in SF's Buildings](https://github.com/sfbrigade/datasci-firerisk/)
 
 + We also have a number of new projects that will be launched in the coming months!
 
 ### Projects On Hold
 
-These  are in need of new leads and contributing members.  Please check them out and reach out to team leads if you are interested in reviving one of these projects!
+The following are in need of new project leads and contributing members.  Please check them out and reach out to DSWG team leads if you are interested in reviving one of these projects!
 
 + [SF OpenData Search Analytics for Improving UX](https://github.com/sfbrigade/datasci-open-data-search)
 + [CTA-NorCal Homeless Program Outcomes Analysis](https://github.com/sfbrigade/datasci-sf-homeless-project)
