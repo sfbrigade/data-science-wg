@@ -18,7 +18,7 @@ Wiki (resources): [DSWG Wiki >>](https://github.com/sfbrigade/data-science-wg/wi
 Group Email Contact: datascience[at]codeforsanfrancisco.org
 If you are interested in volunteering to generallhy help the group as a whole outside of project please reach out to one of the team leads.
 
-### Current Projects
+## Current Projects
 
 Here's what we're currently working on, mostly with gov't/org partners, but as mentioned above, we're also eager to work with -or inspire- dedicated project groups.
 
@@ -26,7 +26,7 @@ Here's what we're currently working on, mostly with gov't/org partners, but as m
 + [Campaign Finance Project](https://github.com/sfbrigade/datasci-congressional-data)
 + [Predicting Relative Risk of Fire in SF's Buildings >>](https://github.com/sfbrigade/datasci-firerisk/)
 
-## Projects On Hold
+### Projects On Hold
 + [SF OpenData Search Analytics for Improving UX >>](https://github.com/sfbrigade/datasci-open-data-search)
 + [U.S. Dept. of Transportation Traffic Fatality Analyses >>](https://github.com/sfbrigade/datasci-dot-fars)  
 + [Northern CA Homelessness Analysis Project  >>](https://github.com/sfbrigade/datasci-sf-homeless-project)
