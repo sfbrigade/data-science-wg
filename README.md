@@ -23,7 +23,7 @@ If you are interested in volunteering to generallhy help the group as a whole ou
 Here's what we're currently working on, mostly with gov't/org partners, but as mentioned above, we're also eager to work with -or inspire- dedicated project groups.
 
 + [Campaign Finance Project](https://github.com/sfbrigade/datasci-congressional-data)
-+ [NL Tweets] (https://github.com/sfbrigade/nltweets)
++ [NL Tweets](https://github.com/sfbrigade/nltweets)
 + [Predicting Relative Risk of Fire in SF's Buildings](https://github.com/sfbrigade/datasci-firerisk/)
 
 + We also have a number of new projects that will be launched in the coming months!
