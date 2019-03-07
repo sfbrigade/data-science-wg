@@ -47,4 +47,5 @@ The following are in need of new project leads and contributing members.  Please
 + [City of SF Budget Visualization](https://github.com/sameerank/sf-budget-visualization)
 + [U.S. Dept. of Transportation Traffic Fatality Analyses](https://github.com/sfbrigade/datasci-dot-fars)  
 
-
+### New Here??
++ Check out our [New Member Onboarding Doc](https://docs.google.com/document/d/1lOkMj_doC9ra9XhrSkpJQ4b06SHvpYdzdBAlUz_xBNg/edit?usp=sharing)
