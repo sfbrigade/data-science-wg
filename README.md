@@ -23,10 +23,10 @@ If you are interested in volunteering to generallhy help the group as a whole ou
 Here's what we're currently working on, mostly with gov't/org partners, but as mentioned above, we're also eager to work with -or inspire- dedicated project groups.
 
 + [The Science of Housing: Impact of Planning Policy on the Housing Crisis](https://github.com/sfbrigade/datasci-housing-pipeline)
++ [The Science of Housing: Impact of Planning Policy on the Housing Crisis](https://github.com/sfbrigade/datasci-housing-pipeline)
 + [CFA Get Calfresh Project](https://github.com/sfbrigade/datasci-cfa-calfresh)
 + [Campaign Finance Project](https://github.com/sfbrigade/datasci-congressional-data)
 + [NL Tweets](https://github.com/sfbrigade/nltweets)
-
 
 + We also have a number of new projects that will be launched in the coming months!
 
@@ -37,8 +37,7 @@ The following are in need of new project leads and contributing members.  Please
 + [SF OpenData Search Analytics for Improving UX](https://github.com/sfbrigade/datasci-open-data-search)
 + [CTA-NorCal Homeless Program Outcomes Analysis](https://github.com/sfbrigade/datasci-sf-homeless-project)
 + [Interactive visualization of SF's building emissions and energy use](https://github.com/sfbrigade/datasci-SF-Environment-Benchmark)
-
-
++ [Predicting Relative Risk of Fire in SF's Buildings](https://github.com/sfbrigade/datasci-firerisk/)
 
 ### Past Projects
 + [Predicting Relative Risk of Fire in SF's Buildings](https://github.com/sfbrigade/datasci-firerisk/)
