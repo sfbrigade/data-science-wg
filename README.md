@@ -53,5 +53,5 @@ In addition to members contributing to individual projects, we are also in need 
 ### New Here??
 + Check out our [New Member Onboarding Doc](https://docs.google.com/document/d/1lOkMj_doC9ra9XhrSkpJQ4b06SHvpYdzdBAlUz_xBNg/edit?usp=sharing)
 
-### Are you new to Data Science??
+### New to Data Science or want to learn more??
 + Explore [Data Science Education Resources](https://github.com/sfbrigade/data-science-wg/wiki/Learning) from our Wiki to get to learnin'!
