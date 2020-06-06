@@ -1,4 +1,5 @@
 ![](banner.png)
+Art by [Irene Lepe](imlepe.weebly.com)
 
 ## Thanks for stopping by!
 
