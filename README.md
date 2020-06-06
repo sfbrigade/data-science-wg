@@ -55,3 +55,5 @@ In addition to members contributing to individual projects, we are also in need 
 
 ### New to Data Science or want to learn more??
 + Explore [Data Science Education Resources](https://github.com/sfbrigade/data-science-wg/wiki/Learning) from our Wiki to get to learnin'!
+
+![](D1Logo.png)
