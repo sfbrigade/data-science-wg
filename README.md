@@ -1,4 +1,4 @@
-![](datascience-wg_header.jpg)
+![](banner.png)
 
 ## Thanks for stopping by!
 
