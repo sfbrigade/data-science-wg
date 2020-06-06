@@ -1,5 +1,4 @@
 ![](banner.png)
-Art by [Irene Lepe](imlepe.weebly.com)
 
 ## Thanks for stopping by!
 
@@ -58,3 +57,4 @@ In addition to members contributing to individual projects, we are also in need 
 + Explore [Data Science Education Resources](https://github.com/sfbrigade/data-science-wg/wiki/Learning) from our Wiki to get to learnin'!
 
 ![](D1Logo.png)
+Art by [Irene Lepe](imlepe.weebly.com)
