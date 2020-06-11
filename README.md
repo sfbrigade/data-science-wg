@@ -11,9 +11,17 @@ The **Data Science Working Group’s** purpose is to efficiently assess, inspire
 
 In pursuing the above, we humbly hope that CfSF's dedicated project groups come to consider us an integral and synergistic resource for the brigade at large.
 
+## Current Group Needs
+
+The DSWG needs both technical and non-technical help in the following areas:
++ Data Analysis, Modelling, Statistics
++ Data Visualization, Storytelling, Dashboarding
++ Marketing, Content writing
++ Community Outreach
+
 ### Administration
 
-Team Leads: [Rocio Ng, Ph.D.](https://goo.gl/WxCdSt)
+Team Lead: [Rocio Ng, Ph.D.](https://goo.gl/WxCdSt)
 Wiki (resources): [DSWG Wiki](https://github.com/sfbrigade/data-science-wg/wiki)   
 Group Email Contact: datascience[at]codeforsanfrancisco.org
 If you are interested in volunteering to generally help the group as a whole outside of project please reach out to one of the team leads.
@@ -22,11 +30,9 @@ If you are interested in volunteering to generally help the group as a whole out
 
 Here's what we're currently working on, mostly with gov't/org partners, but as mentioned above, we're also eager to work with -or inspire- dedicated project groups.
 
-+ [The Science of Housing: Impact of Planning Policy on the Housing Crisis](https://github.com/sfbrigade/datasci-housing-pipeline)
-+ [CFA Get Calfresh Project](https://github.com/sfbrigade/datasci-cfa-calfresh)
++ [The Science of Housing: Impact of Planning Policy on the Housing Crisis](https://github.com/sfbrigade/datasci-housing-pipeline) - Currently paused
++ [CFA Get Calfresh Project](https://github.com/sfbrigade/datasci-cfa-calfresh) - Currently paused
 + [NL Tweets](https://github.com/sfbrigade/nltweets)
-
-+ We also have a number of new projects that will be launched in the coming months!
 
 ### Projects On Hold
 
@@ -47,14 +53,14 @@ The following are in need of new project leads and contributing members.  Please
 + [City of SF Budget Visualization](https://github.com/sameerank/sf-budget-visualization)
 + [U.S. Dept. of Transportation Traffic Fatality Analyses](https://github.com/sfbrigade/datasci-dot-fars)
 
-## Current Group Needs + Leadership Opportunities
-In addition to members contributing to individual projects, we are also in need of passionate and motivated individuals to join the Core DSWG team!  We have many leadership opportunities as well as opportunities to help with marketing, content writing, event planning etc.  Please reach out to @rocio on Slack or send an email to datascience[at]codeforsanfrancisco.org.
-
 ### New Here??
 + Check out our [New Member Onboarding Doc](https://docs.google.com/document/d/1lOkMj_doC9ra9XhrSkpJQ4b06SHvpYdzdBAlUz_xBNg/edit?usp=sharing)
 
 ### New to Data Science or want to learn more??
 + Explore [Data Science Education Resources](https://github.com/sfbrigade/data-science-wg/wiki/Learning) from our Wiki to get to learnin'!
+
+### DSWG Leadership Opportunities
+In addition to members contributing to individual projects, we are also in need of passionate and motivated individuals to join the Core DSWG team!  We have many leadership opportunities as well as opportunities to help with marketing, content writing, event planning etc.  Please reach out to @rocio on Slack or send an email to datascience[at]codeforsanfrancisco.org.
 
 ![](D1Logo.png) 
 
